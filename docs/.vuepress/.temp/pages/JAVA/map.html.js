@@ -1,5 +1,5 @@
 import comp from "D:/study/tesiwoo.github.io/docs/.vuepress/.temp/pages/java/map.html.vue"
-const data = JSON.parse("{\"path\":\"/java/map.html\",\"title\":\"Map（存储键值对，键唯一）\",\"lang\":\"en-US\",\"frontmatter\":{},\"git\":{},\"filePathRelative\":\"java/map.md\"}")
+const data = JSON.parse("{\"path\":\"/java/map.html\",\"title\":\"Map（存储键值对，键唯一）\",\"lang\":\"zh-CN\",\"frontmatter\":{},\"readingTime\":{\"minutes\":10.76,\"words\":3227},\"filePathRelative\":\"java/map.md\"}")
 export { comp, data }
 
 if (import.meta.webpackHot) {

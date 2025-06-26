@@ -1,5 +1,5 @@
 import comp from "D:/study/tesiwoo.github.io/docs/.vuepress/.temp/pages/java/keywords.html.vue"
-const data = JSON.parse("{\"path\":\"/java/keywords.html\",\"title\":\"instanceof\",\"lang\":\"en-US\",\"frontmatter\":{},\"git\":{},\"filePathRelative\":\"java/keywords.md\"}")
+const data = JSON.parse("{\"path\":\"/java/keywords.html\",\"title\":\"instanceof\",\"lang\":\"zh-CN\",\"frontmatter\":{},\"readingTime\":{\"minutes\":0.66,\"words\":198},\"filePathRelative\":\"java/keywords.md\"}")
 export { comp, data }
 
 if (import.meta.webpackHot) {

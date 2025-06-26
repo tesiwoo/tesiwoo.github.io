@@ -30,9 +30,8 @@ Git迅速成为最流行的分布式版本控制系统，尤其是2008年，GitH
 <li>安装完成后在开始菜单或者右键鼠标快捷菜单 中有Git bash 和 Git GUI，点击Git Bash出现和命令行窗口差不多的窗口即表示安装成功</li>
 <li>在命令行中使用下述命令配置个人信息</li>
 </ol>
-<div class="language-git line-numbers-mode" data-highlighter="prismjs" data-ext="git"><pre v-pre><code class="language-git"><span class="line">git config --global user.name <span class="token string">"你的名字"</span></span>
-<span class="line">git config --global user.email <span class="token string">"你的邮箱地址"</span></span>
-<span class="line"></span></code></pre>
+<div class="language-git line-numbers-mode" data-highlighter="shiki" data-ext="git" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code" v-pre=""><code class="language-git"><span class="line"><span>git config --global user.name "你的名字"</span></span>
+<span class="line"><span>git config --global user.email "你的邮箱地址"</span></span></code></pre>
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div></div></div><blockquote>
 <p>使用了--global表示安装的这台计算机中所有的git仓库都会使用这个配置，自然，可以对不同仓库使用不同的用户名和邮箱
 进入指定仓库的.git\目录下,执行不带--global参数的上述命令即是在该仓库中使用这个配置</p>

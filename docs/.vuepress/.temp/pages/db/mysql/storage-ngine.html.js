@@ -1,5 +1,5 @@
 import comp from "D:/study/tesiwoo.github.io/docs/.vuepress/.temp/pages/db/mysql/storage-ngine.html.vue"
-const data = JSON.parse("{\"path\":\"/db/mysql/storage-ngine.html\",\"title\":\"InnoDB和MyIsAM区别\",\"lang\":\"en-US\",\"frontmatter\":{},\"git\":{\"updatedTime\":1750920449000,\"contributors\":[{\"name\":\"yuxiang_chu\",\"username\":\"\",\"email\":\"yuxiang_chu@sui.com\",\"commits\":1}],\"changelog\":[{\"hash\":\"44c30d70161c82a6f9f433d9f4b9c06db8671c2c\",\"time\":1750920449000,\"email\":\"yuxiang_chu@sui.com\",\"author\":\"yuxiang_chu\",\"message\":\"3\"}]},\"filePathRelative\":\"db/mysql/storage-ngine.md\"}")
+const data = JSON.parse("{\"path\":\"/db/mysql/storage-ngine.html\",\"title\":\"InnoDB和MyIsAM区别\",\"lang\":\"zh-CN\",\"frontmatter\":{},\"readingTime\":{\"minutes\":7.27,\"words\":2181},\"filePathRelative\":\"db/mysql/storage-ngine.md\"}")
 export { comp, data }
 
 if (import.meta.webpackHot) {

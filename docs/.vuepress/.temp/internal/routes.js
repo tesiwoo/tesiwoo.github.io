@@ -14,7 +14,6 @@ export const routes = Object.fromEntries([
   ["/java/BNAIO.html", { loader: () => import(/* webpackChunkName: "java_BNAIO.html" */"D:/study/tesiwoo.github.io/docs/.vuepress/.temp/pages/java/BNAIO.html.js"), meta: {"title":""} }],
   ["/java/collections.html", { loader: () => import(/* webpackChunkName: "java_collections.html" */"D:/study/tesiwoo.github.io/docs/.vuepress/.temp/pages/java/collections.html.js"), meta: {"title":"Collection （所有集合类的接口）"} }],
   ["/java/http-agreement.html", { loader: () => import(/* webpackChunkName: "java_http-agreement.html" */"D:/study/tesiwoo.github.io/docs/.vuepress/.temp/pages/java/http-agreement.html.js"), meta: {"title":"HTTP协议"} }],
-  ["/java/java8-characteristic.html", { loader: () => import(/* webpackChunkName: "java_java8-characteristic.html" */"D:/study/tesiwoo.github.io/docs/.vuepress/.temp/pages/java/java8-characteristic.html.js"), meta: {"title":"java8新特性"} }],
   ["/java/JVM.html", { loader: () => import(/* webpackChunkName: "java_JVM.html" */"D:/study/tesiwoo.github.io/docs/.vuepress/.temp/pages/java/JVM.html.js"), meta: {"title":"JVM理解"} }],
   ["/java/keywords.html", { loader: () => import(/* webpackChunkName: "java_keywords.html" */"D:/study/tesiwoo.github.io/docs/.vuepress/.temp/pages/java/keywords.html.js"), meta: {"title":"instanceof"} }],
   ["/java/list.html", { loader: () => import(/* webpackChunkName: "java_list.html" */"D:/study/tesiwoo.github.io/docs/.vuepress/.temp/pages/java/list.html.js"), meta: {"title":"List（列表）"} }],
@@ -45,6 +44,16 @@ export const routes = Object.fromEntries([
   ["/%E4%B8%AD%E9%97%B4%E4%BB%B6/RabbitMQ/Class0%EF%BC%9AAMQP%E5%8D%8F%E8%AE%AE.html", { loader: () => import(/* webpackChunkName: "中间件_RabbitMQ_Class0：AMQP协议.html" */"D:/study/tesiwoo.github.io/docs/.vuepress/.temp/pages/中间件/RabbitMQ/Class0：AMQP协议.html.js"), meta: {"title":"消息代理和他们所扮演的角色"} }],
   ["/%E4%B8%AD%E9%97%B4%E4%BB%B6/RabbitMQ/RabbitMQ.html", { loader: () => import(/* webpackChunkName: "中间件_RabbitMQ_RabbitMQ.html" */"D:/study/tesiwoo.github.io/docs/.vuepress/.temp/pages/中间件/RabbitMQ/RabbitMQ.html.js"), meta: {"title":"消息中间件简介"} }],
   ["/404.html", { loader: () => import(/* webpackChunkName: "404.html" */"D:/study/tesiwoo.github.io/docs/.vuepress/.temp/pages/404.html.js"), meta: {"title":""} }],
+  ["/concurrency/", { loader: () => import(/* webpackChunkName: "concurrency_index.html" */"D:/study/tesiwoo.github.io/docs/.vuepress/.temp/pages/concurrency/index.html.js"), meta: {"title":"Concurrency"} }],
+  ["/db/", { loader: () => import(/* webpackChunkName: "db_index.html" */"D:/study/tesiwoo.github.io/docs/.vuepress/.temp/pages/db/index.html.js"), meta: {"title":"Db"} }],
+  ["/GIT/", { loader: () => import(/* webpackChunkName: "GIT_index.html" */"D:/study/tesiwoo.github.io/docs/.vuepress/.temp/pages/GIT/index.html.js"), meta: {"title":"GIT"} }],
+  ["/interview/", { loader: () => import(/* webpackChunkName: "interview_index.html" */"D:/study/tesiwoo.github.io/docs/.vuepress/.temp/pages/interview/index.html.js"), meta: {"title":"Interview"} }],
+  ["/java/", { loader: () => import(/* webpackChunkName: "java_index.html" */"D:/study/tesiwoo.github.io/docs/.vuepress/.temp/pages/java/index.html.js"), meta: {"title":"Java"} }],
+  ["/Linux/", { loader: () => import(/* webpackChunkName: "Linux_index.html" */"D:/study/tesiwoo.github.io/docs/.vuepress/.temp/pages/Linux/index.html.js"), meta: {"title":"Linux"} }],
+  ["/db/mysql/", { loader: () => import(/* webpackChunkName: "db_mysql_index.html" */"D:/study/tesiwoo.github.io/docs/.vuepress/.temp/pages/db/mysql/index.html.js"), meta: {"title":"Mysql"} }],
+  ["/db/redis/", { loader: () => import(/* webpackChunkName: "db_redis_index.html" */"D:/study/tesiwoo.github.io/docs/.vuepress/.temp/pages/db/redis/index.html.js"), meta: {"title":"Redis"} }],
+  ["/%E4%B8%AD%E9%97%B4%E4%BB%B6/RabbitMQ/", { loader: () => import(/* webpackChunkName: "中间件_RabbitMQ_index.html" */"D:/study/tesiwoo.github.io/docs/.vuepress/.temp/pages/中间件/RabbitMQ/index.html.js"), meta: {"title":"Rabbit MQ"} }],
+  ["/%E4%B8%AD%E9%97%B4%E4%BB%B6/", { loader: () => import(/* webpackChunkName: "中间件_index.html" */"D:/study/tesiwoo.github.io/docs/.vuepress/.temp/pages/中间件/index.html.js"), meta: {"title":"中间件"} }],
 ]);
 
 if (import.meta.webpackHot) {

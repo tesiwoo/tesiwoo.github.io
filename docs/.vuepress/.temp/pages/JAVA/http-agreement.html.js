@@ -1,5 +1,5 @@
 import comp from "D:/study/tesiwoo.github.io/docs/.vuepress/.temp/pages/java/http-agreement.html.vue"
-const data = JSON.parse("{\"path\":\"/java/http-agreement.html\",\"title\":\"HTTP协议\",\"lang\":\"en-US\",\"frontmatter\":{},\"git\":{},\"filePathRelative\":\"java/http-agreement.md\"}")
+const data = JSON.parse("{\"path\":\"/java/http-agreement.html\",\"title\":\"HTTP协议\",\"lang\":\"zh-CN\",\"frontmatter\":{},\"readingTime\":{\"minutes\":3.75,\"words\":1125},\"filePathRelative\":\"java/http-agreement.md\"}")
 export { comp, data }
 
 if (import.meta.webpackHot) {

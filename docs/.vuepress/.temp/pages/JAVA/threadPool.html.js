@@ -1,5 +1,5 @@
 import comp from "D:/study/tesiwoo.github.io/docs/.vuepress/.temp/pages/java/threadPool.html.vue"
-const data = JSON.parse("{\"path\":\"/java/threadPool.html\",\"title\":\"使用线程池实现多线程\",\"lang\":\"en-US\",\"frontmatter\":{},\"git\":{},\"filePathRelative\":\"java/threadPool.md\"}")
+const data = JSON.parse("{\"path\":\"/java/threadPool.html\",\"title\":\"使用线程池实现多线程\",\"lang\":\"zh-CN\",\"frontmatter\":{},\"readingTime\":{\"minutes\":7.93,\"words\":2380},\"filePathRelative\":\"java/threadPool.md\"}")
 export { comp, data }
 
 if (import.meta.webpackHot) {

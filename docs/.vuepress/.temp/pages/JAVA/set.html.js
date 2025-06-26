@@ -1,5 +1,5 @@
 import comp from "D:/study/tesiwoo.github.io/docs/.vuepress/.temp/pages/java/set.html.vue"
-const data = JSON.parse("{\"path\":\"/java/set.html\",\"title\":\"Set\",\"lang\":\"en-US\",\"frontmatter\":{},\"git\":{},\"filePathRelative\":\"java/set.md\"}")
+const data = JSON.parse("{\"path\":\"/java/set.html\",\"title\":\"Set\",\"lang\":\"zh-CN\",\"frontmatter\":{},\"readingTime\":{\"minutes\":5.38,\"words\":1615},\"filePathRelative\":\"java/set.md\"}")
 export { comp, data }
 
 if (import.meta.webpackHot) {

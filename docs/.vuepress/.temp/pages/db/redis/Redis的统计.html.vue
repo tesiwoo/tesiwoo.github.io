@@ -4,10 +4,9 @@
 一般选择set类型</p>
 <p>使用场景：系统新增用户、留存用户等</p>
 <h3 id="set-操作" tabindex="-1"><a class="header-anchor" href="#set-操作"><span>Set 操作</span></a></h3>
-<div class="language-bash line-numbers-mode" data-highlighter="prismjs" data-ext="sh"><pre v-pre><code class="language-bash"><span class="line">SUNIONSTORE destination key <span class="token punctuation">[</span>key <span class="token punctuation">..</span>.<span class="token punctuation">]</span>   //  所有key的值进行并集计算  即：存在 key<span class="token punctuation">..</span>. 中的值 全部存入destination 的key中</span>
-<span class="line">SDIFFSTORE newKey key1 key2 //  key1 key2 差集计算 即 key1中存在但是key2中不存在的值存入newKey中</span>
-<span class="line">SINTERSTORE newKey key1 key2 // key1 key2 的交集计算 即 即存在于key1中也存在与key2中的值存入newKey中</span>
-<span class="line"></span></code></pre>
+<div class="language-shell line-numbers-mode" data-highlighter="shiki" data-ext="shell" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code" v-pre=""><code class="language-shell"><span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">SUNIONSTORE</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> destination</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> key</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF"> [key </span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">...]</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">   //</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">  所有key的值进行并集计算</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">  即：存在</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> key...</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> 中的值</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> 全部存入destination</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> 的key中</span></span>
+<span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">SDIFFSTORE</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> newKey</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> key1</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> key2</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> //</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">  key1</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> key2</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> 差集计算</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> 即</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> key1中存在但是key2中不存在的值存入newKey中</span></span>
+<span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">SINTERSTORE</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> newKey</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> key1</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> key2</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> //</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> key1</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> key2</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> 的交集计算</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> 即</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> 即存在于key1中也存在与key2中的值存入newKey中</span></span></code></pre>
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><ol>
 <li>SADD key member1 [member2]
 向集合添加一个或多个成员</li>
@@ -93,7 +92,6 @@
 <h2 id="基数统计" tabindex="-1"><a class="header-anchor" href="#基数统计"><span>基数统计</span></a></h2>
 <p>一般使用 HyperLoglog 类型 HyperLogLog是Redis 的拓展类型
 具体见该类型详情</p>
-<p><img src="@source/resource/images/企业微信截图_16396262445125.png" alt="企业微信截图_16396262445125"></p>
 </div></template>
 
 

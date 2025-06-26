@@ -5,10 +5,9 @@
 输入元素非常大的时候，计算基数所需要的空间是固定且很小的（当存储的元素达到某个阈值后，需要花12kb来存这个键，可以存2^64个不同元素）
 <strong>缺点：</strong>
 hyperLogLog结构只能记录有多少个不同的元素，无法像集合一样拿出元素使用</p>
-<div class="language-bash line-numbers-mode" data-highlighter="prismjs" data-ext="sh"><pre v-pre><code class="language-bash"><span class="line">pfadd key element <span class="token punctuation">[</span>element<span class="token punctuation">..</span>.<span class="token punctuation">]</span>  // 添加指定元素到key</span>
-<span class="line">pfcount key <span class="token punctuation">[</span>key<span class="token punctuation">..</span>.<span class="token punctuation">]</span>  // 返回给定的键得基数估算值</span>
-<span class="line">pfmerge destKey sourcekey<span class="token punctuation">[</span>sourcekey<span class="token punctuation">..</span>.<span class="token punctuation">]</span> // 将sourcekeys合并成一个destKey</span>
-<span class="line"></span></code></pre>
+<div class="language-shell line-numbers-mode" data-highlighter="shiki" data-ext="shell" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code" v-pre=""><code class="language-shell"><span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">pfadd</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> key</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> element</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF"> [element...]  // 添加指定元素到key</span></span>
+<span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">pfcount</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> key</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF"> [key...]  // 返回给定的键得基数估算值</span></span>
+<span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">pfmerge</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> destKey</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> sourcekey[sourcekey...]</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> //</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> 将sourcekeys合并成一个destKey</span></span></code></pre>
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="hyperloglog的实现原理" tabindex="-1"><a class="header-anchor" href="#hyperloglog的实现原理"><span>HyperLogLog的实现原理</span></a></h2>
 <p>实际上，HyperLogLog不会存储每个元素的值，它使用的是概率算法。
 // todo</p>

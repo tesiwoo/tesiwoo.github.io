@@ -56,13 +56,11 @@
 <p>get 方法是不安全的，因为你在发送请求的过程中，你的请求参数会拼在 URL 后面，从而导致容易被攻击者窃取，对你的信息造成破坏和伪造；</p>
 </li>
 </ul>
-<div class="language-text line-numbers-mode" data-highlighter="prismjs" data-ext="text"><pre v-pre><code class="language-text"><span class="line">/test/demo_form.asp?name1=value1&amp;name2=value2</span>
-<span class="line"></span></code></pre>
+<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code" v-pre=""><code class="language-"><span class="line"><span>/test/demo_form.asp?name1=value1&#x26;name2=value2</span></span></code></pre>
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p>而 post 方法是把参数放在请求体 body 中的，这对用户来说不可见。</p>
-<div class="language-text line-numbers-mode" data-highlighter="prismjs" data-ext="text"><pre v-pre><code class="language-text"><span class="line">POST /test/demo_form.asp HTTP/1.1</span>
-<span class="line">Host: w3schools.com</span>
-<span class="line">name1=value1&amp;name2=value2</span>
-<span class="line"></span></code></pre>
+<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code" v-pre=""><code class="language-"><span class="line"><span>POST /test/demo_form.asp HTTP/1.1</span></span>
+<span class="line"><span>Host: w3schools.com</span></span>
+<span class="line"><span>name1=value1&#x26;name2=value2</span></span></code></pre>
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><ul>
 <li>get 请求的 URL 有长度限制，而 post 请求会把参数和值放在消息体中，对数据长度没有要求。</li>
 <li>get 请求会被浏览器主动 cache，而 post 不会，除非手动设置。</li>

@@ -1,5 +1,5 @@
 import comp from "D:/study/tesiwoo.github.io/docs/.vuepress/.temp/pages/java/collections.html.vue"
-const data = JSON.parse("{\"path\":\"/java/collections.html\",\"title\":\"Collection （所有集合类的接口）\",\"lang\":\"en-US\",\"frontmatter\":{},\"git\":{},\"filePathRelative\":\"java/collections.md\"}")
+const data = JSON.parse("{\"path\":\"/java/collections.html\",\"title\":\"Collection （所有集合类的接口）\",\"lang\":\"zh-CN\",\"frontmatter\":{},\"readingTime\":{\"minutes\":2.57,\"words\":772},\"filePathRelative\":\"java/collections.md\"}")
 export { comp, data }
 
 if (import.meta.webpackHot) {

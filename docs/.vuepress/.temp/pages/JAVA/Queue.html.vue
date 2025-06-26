@@ -86,26 +86,25 @@ Queue继承了Collection接口，是和List，Set同级别的</p>
 <li>DelayQueue（基于PriorityQueue来实现的）是一个存放Delayed 元素的无界阻塞队列，只有在延迟期满时才能从中提取元素。该队列的头部是延迟期满后保存时间最长的 Delayed 元素。如果延迟都还没有期满，则队列没有头部，并且poll将返回null。当一个元素的 getDelay(TimeUnit.NANOSECONDS) 方法返回一个小于或等于零的值时，则出现期满，poll就以移除这个元素了。此队列不允许使用 null 元素。</li>
 </ul>
 <p><strong>队列 ：queue</strong></p>
-<div class="language-tex line-numbers-mode" data-highlighter="prismjs" data-ext="tex"><pre v-pre><code class="language-tex"><span class="line">先进先出</span>
+<div class="language-tex line-numbers-mode" data-highlighter="shiki" data-ext="tex" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code" v-pre=""><code class="language-tex"><span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">先进先出</span></span>
 <span class="line"></span>
-<span class="line">.add(E e)：将指定元素插入此队列中（尾插）</span>
+<span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">.add(E e)：将指定元素插入此队列中（尾插）</span></span>
 <span class="line"></span>
-<span class="line">.element：查看这个队列的头，但是不删除</span>
+<span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">.element：查看这个队列的头，但是不删除</span></span>
 <span class="line"></span>
-<span class="line">.peek：检索但不删除此队列的头，如果队列为空返回null</span>
+<span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">.peek：检索但不删除此队列的头，如果队列为空返回null</span></span>
 <span class="line"></span>
-<span class="line">.poll：检索并删除此队列的头</span>
+<span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">.poll：检索并删除此队列的头</span></span>
 <span class="line"></span>
-<span class="line">.offer(E e)：不违反容量限制下，将指定的元素插入此队列中（尾插）</span>
+<span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">.offer(E e)：不违反容量限制下，将指定的元素插入此队列中（尾插）</span></span>
 <span class="line"></span>
-<span class="line">.remove：删除此队列的头	</span>
+<span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">.remove：删除此队列的头	</span></span>
 <span class="line"></span>
-<span class="line">.tack：取出并删除队头的元素,当队列为空,则会一直等待直到队列有新元素可以取出,或者线程被中断抛出异常</span>
+<span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">.tack：取出并删除队头的元素,当队列为空,则会一直等待直到队列有新元素可以取出,或者线程被中断抛出异常</span></span>
 <span class="line"></span>
-<span class="line">.put：往队列里插入元素,如果队列已经满,则会一直等待直到队列为空插入新元素,或者线程被中断抛出异常. </span>
+<span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">.put：往队列里插入元素,如果队列已经满,则会一直等待直到队列为空插入新元素,或者线程被中断抛出异常. </span></span>
 <span class="line"></span>
-<span class="line">注意： 队列不能直接new Queue()出来，类似于List有其子类。如LinkedBlockingQueue&lt;E>(QUEUE_LENGTH);和ArrayBlockingQueue&lt;E>(QUEUE_LENGTH)：其中E指泛型，QUEUE_LENGTH可以指定容量即长度**前者是以数组的形式存储，后者是以Node节点的链表形式存储。**</span>
-<span class="line"></span></code></pre>
+<span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">注意： 队列不能直接new Queue()出来，类似于List有其子类。如LinkedBlockingQueue&#x3C;E>(QUEUE_LENGTH);和ArrayBlockingQueue&#x3C;E>(QUEUE_LENGTH)：其中E指泛型，QUEUE_LENGTH可以指定容量即长度**前者是以数组的形式存储，后者是以Node节点的链表形式存储。**</span></span></code></pre>
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></div></template>
 
 

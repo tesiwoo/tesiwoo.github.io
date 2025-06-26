@@ -16,9 +16,8 @@
 <ol>
 <li>启动多台Redis实例时，它们相互之间可以通过<code v-pre>replicaof</code>（Redis5.0前使用的是slaveof）命令形成主库和从库的关系。</li>
 </ol>
-<div class="language-bash line-numbers-mode" data-highlighter="prismjs" data-ext="sh"><pre v-pre><code class="language-bash"><span class="line">// 运行该命令的Redis实例就成为了 <span class="token number">172.1</span>.1.0 服务器中Redis的从库</span>
-<span class="line">replicaof <span class="token number">172.1</span>.1.0 <span class="token number">6379</span></span>
-<span class="line"></span></code></pre>
+<div class="language-shell line-numbers-mode" data-highlighter="shiki" data-ext="shell" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code" v-pre=""><code class="language-shell"><span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">//</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> 运行该命令的Redis实例就成为了</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> 172.1.1.0</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> 服务器中Redis的从库</span></span>
+<span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">replicaof</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> 172.1.1.0</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> 6379</span></span></code></pre>
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div></div></div><ol start="2">
 <li>建立主从库管理后就会进行第一次同步
 2.1. 主从库建立链接、协商同步的过程，主要是为全量复制做准备。 从库和主库建立起链接，并告诉主库即将进行同步，主库确认回复后，主从库间就可以开始同步了。
