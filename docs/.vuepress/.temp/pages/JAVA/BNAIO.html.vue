@@ -13,7 +13,7 @@
 <p>同步阻塞I/O模型，数据的读取写入必须阻塞在一个线程内等待其完成。</p>
 <h3 id="传统bio" tabindex="-1"><a class="header-anchor" href="#传统bio"><span>传统BIO</span></a></h3>
 <p>BIO通信（——请求——应答）模型图如下：</p>
-<p><img src="@source/../resource/images/image-20200824094940796.png" alt="image-20200824094940796"></p>
+<figure><img src="@source/../resource/images/image-20200824094940796.png" alt="image-20200824094940796" tabindex="0" loading="lazy"><figcaption>image-20200824094940796</figcaption></figure>
 <p>采用 <strong>BIO 通信模型</strong> 的服务端，通常由一个独立的 Acceptor 线程负责监听客户端的连接。我们一般通过在<code v-pre>while(true)</code> 循环中服务端会调用 <code v-pre>accept()</code> 方法等待接收客户端的连接的方式监听请求，请求一旦接收到一个连接请求，就可以建立通信套接字在这个通信套接字上进行读写操作，此时不能再接收其他客户端连接请求，只能等待同当前连接的客户端的操作执行完成， 不过可以通过多线程来支持多个客户端的连接，如上图所示。</p>
 <p>如果要让 <strong>BIO 通信模型</strong> 能够同时处理多个客户端请求，就必须使用多线程（主要原因是<code v-pre>socket.accept()</code>、<code v-pre>socket.read()</code>、<code v-pre>socket.write()</code> 涉及的三个主要函数都是同步阻塞的），也就是说它在接收到客户端连接请求之后为每个客户端创建一个新的线程进行链路处理，处理完成之后，通过输出流返回应答给客户端，线程销毁。这就是典型的 <strong>一请求一应答通信模型</strong> 。我们可以设想一下如果这个连接不做任何事情的话就会造成不必要的线程开销，不过可以通过 <strong>线程池机制</strong> 改善，线程池还可以让线程的创建和回收成本相对较低。使用<code v-pre>FixedThreadPool</code> 可以有效的控制了线程的最大数量，保证了系统有限的资源的控制，实现了N(客户端请求数量):M(处理客户端请求的线程数量)的伪异步I/O模型（N 可以远远大于 M），下面一节&quot;伪异步 BIO&quot;中会详细介绍到。</p>
 <p><strong>我们再设想一下当客户端并发访问量增加后这种模型会出现什么问题？</strong></p>
@@ -46,7 +46,7 @@
 <h4 id="_4-selector-选择器" tabindex="-1"><a class="header-anchor" href="#_4-selector-选择器"><span>4)Selector (选择器)</span></a></h4>
 <p>NIO有选择器，而IO没有。</p>
 <p>选择器用于使用单个线程处理多个通道。因此，它需要较少的线程来处理这些通道。线程之间的切换对于操作系统来说是昂贵的。 因此，为了提高系统效率选择器是有用的。</p>
-<p><img src="@source/../resource/images/image-20201023094931288.png" alt="image-20201023094931288"></p>
+<figure><img src="@source/../resource/images/image-20201023094931288.png" alt="image-20201023094931288" tabindex="0" loading="lazy"><figcaption>image-20201023094931288</figcaption></figure>
 <h3 id="_2-3-nio-读数据和写数据方式" tabindex="-1"><a class="header-anchor" href="#_2-3-nio-读数据和写数据方式"><span>2.3 NIO 读数据和写数据方式</span></a></h3>
 <p>通常来说NIO中的所有IO都是从 Channel（通道） 开始的。</p>
 <ul>
@@ -54,7 +54,7 @@
 <li>从通道进行数据写入 ：创建一个缓冲区，填充数据，并要求通道写入数据。</li>
 </ul>
 <p>数据读取和写入操作图示：</p>
-<p><img src="@source/../resource/images/image-20201023094943288.png" alt="image-20201023094943288"></p>
+<figure><img src="@source/../resource/images/image-20201023094943288.png" alt="image-20201023094943288" tabindex="0" loading="lazy"><figcaption>image-20201023094943288</figcaption></figure>
 <h3 id="_2-4-nio核心组件简单介绍" tabindex="-1"><a class="header-anchor" href="#_2-4-nio核心组件简单介绍"><span>2.4 NIO核心组件简单介绍</span></a></h3>
 <p>NIO 包含下面几个核心的组件：</p>
 <ul>

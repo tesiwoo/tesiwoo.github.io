@@ -18,7 +18,7 @@ Queue继承了Collection接口，是和List，Set同级别的</p>
 </ul>
 <h3 id="双端队列-deque" tabindex="-1"><a class="header-anchor" href="#双端队列-deque"><span>双端队列（Deque）</span></a></h3>
 <p>注意：阻塞和分阻塞的就是在部分方法是否有锁（如：offer(T E)）</p>
-<p><img src="@source/../resource/images/企业微信截图_163400895765.png" alt="企业微信截图_163400895765"></p>
+<figure><img src="@source/../resource/images/企业微信截图_163400895765.png" alt="企业微信截图_163400895765" tabindex="0" loading="lazy"><figcaption>企业微信截图_163400895765</figcaption></figure>
 <h2 id="队列的一些操作" tabindex="-1"><a class="header-anchor" href="#队列的一些操作"><span>队列的一些操作：</span></a></h2>
 <table>
 <thead>
@@ -86,7 +86,7 @@ Queue继承了Collection接口，是和List，Set同级别的</p>
 <li>DelayQueue（基于PriorityQueue来实现的）是一个存放Delayed 元素的无界阻塞队列，只有在延迟期满时才能从中提取元素。该队列的头部是延迟期满后保存时间最长的 Delayed 元素。如果延迟都还没有期满，则队列没有头部，并且poll将返回null。当一个元素的 getDelay(TimeUnit.NANOSECONDS) 方法返回一个小于或等于零的值时，则出现期满，poll就以移除这个元素了。此队列不允许使用 null 元素。</li>
 </ul>
 <p><strong>队列 ：queue</strong></p>
-<div class="language-tex line-numbers-mode" data-highlighter="shiki" data-ext="tex" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code" v-pre=""><code class="language-tex"><span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">先进先出</span></span>
+<div class="language-tex line-numbers-mode" data-highlighter="shiki" data-ext="tex" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code class="language-tex"><span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">先进先出</span></span>
 <span class="line"></span>
 <span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">.add(E e)：将指定元素插入此队列中（尾插）</span></span>
 <span class="line"></span>

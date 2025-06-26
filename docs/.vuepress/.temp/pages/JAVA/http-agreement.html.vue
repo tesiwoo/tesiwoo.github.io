@@ -19,9 +19,9 @@
 <p>eg：http://localhost:8080/admin/index.html?a=1#name</p>
 <p><strong>请求消息Request</strong></p>
 <p>格式：</p>
-<p><img src="@source/../resource/images/image-20201002132021474.png" alt="image-20201002132021474"></p>
+<figure><img src="@source/../resource/images/image-20201002132021474.png" alt="image-20201002132021474" tabindex="0" loading="lazy"><figcaption>image-20201002132021474</figcaption></figure>
 <p><strong>响应消息Response</strong></p>
-<p><img src="@source/../resource/images/image-20201002132600836.png" alt="image-20201002132600836"></p>
+<figure><img src="@source/../resource/images/image-20201002132600836.png" alt="image-20201002132600836" tabindex="0" loading="lazy"><figcaption>image-20201002132600836</figcaption></figure>
 <p><strong>HTTP状态码</strong></p>
 <p>1XX：消息（没看到过哈哈哈）</p>
 <p>2XX：成功</p>
@@ -39,7 +39,7 @@
 <h1 id="http与https的区别" tabindex="-1"><a class="header-anchor" href="#http与https的区别"><span>Http与https的区别</span></a></h1>
 <p>Https比http多了secure（安全）性这个概念，实际上，Https并不是一个全新的应用层协议，它其实就是HTTP+TSL/SSL协议组合而成的，而安全性的保证正是TLS/SSL 所做的工作</p>
 <p><strong>HTTPS 就是身披了一层 SSL 的 HTTP</strong>。</p>
-<p><img src="@source/../resource/images/image-20201015204718336.png" alt="image-20201015204718336"></p>
+<figure><img src="@source/../resource/images/image-20201015204718336.png" alt="image-20201015204718336" tabindex="0" loading="lazy"><figcaption>image-20201015204718336</figcaption></figure>
 <ul>
 <li>最简单的，HTTP在地址栏以http://开头，而https是以https://开头</li>
 <li>Http 是未经安全加密的协议，它的传输过程中容易被攻击者监听、数据容易被盗取，发送方和接收方容易被伪造；而https是安全的协议，它通过<strong>秘钥交换算法-签名算法-对称加密算法-摘要算法</strong> 能够解决这些问题</li>
@@ -56,9 +56,9 @@
 <p>get 方法是不安全的，因为你在发送请求的过程中，你的请求参数会拼在 URL 后面，从而导致容易被攻击者窃取，对你的信息造成破坏和伪造；</p>
 </li>
 </ul>
-<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code" v-pre=""><code class="language-"><span class="line"><span>/test/demo_form.asp?name1=value1&#x26;name2=value2</span></span></code></pre>
+<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code class="language-"><span class="line"><span>/test/demo_form.asp?name1=value1&#x26;name2=value2</span></span></code></pre>
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p>而 post 方法是把参数放在请求体 body 中的，这对用户来说不可见。</p>
-<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code" v-pre=""><code class="language-"><span class="line"><span>POST /test/demo_form.asp HTTP/1.1</span></span>
+<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code class="language-"><span class="line"><span>POST /test/demo_form.asp HTTP/1.1</span></span>
 <span class="line"><span>Host: w3schools.com</span></span>
 <span class="line"><span>name1=value1&#x26;name2=value2</span></span></code></pre>
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><ul>

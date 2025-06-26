@@ -1,5 +1,5 @@
 <template><div><Toc /><h1 id="mysql的简易架构图" tabindex="-1"><a class="header-anchor" href="#mysql的简易架构图"><span>Mysql的简易架构图</span></a></h1>
-<p><img src="@source/../resource/images/企业微信截图_16369608259919.png" alt="企业微信截图_16369608259919"></p>
+<figure><img src="@source/../resource/images/企业微信截图_16369608259919.png" alt="企业微信截图_16369608259919" tabindex="0" loading="lazy"><figcaption>企业微信截图_16369608259919</figcaption></figure>
 <h1 id="范式" tabindex="-1"><a class="header-anchor" href="#范式"><span>范式</span></a></h1>
 <p>关系型数据库中的关系是要满足一定要求的，满足不同程度要求的为不同范式（关系型数据中的每一张表是符合一范式）</p>
 <p>第一范式：每个属性（字段）不可再分</p>

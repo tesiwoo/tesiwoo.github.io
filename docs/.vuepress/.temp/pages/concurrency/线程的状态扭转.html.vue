@@ -11,7 +11,7 @@
 </ol>
 </blockquote>
 <h2 id="状态扭转图" tabindex="-1"><a class="header-anchor" href="#状态扭转图"><span>状态扭转图</span></a></h2>
-<p><img src="@source/../resource/images/2018070117435683.jpg" alt="2018070117435683"></p>
+<figure><img src="@source/../resource/images/2018070117435683.jpg" alt="2018070117435683" tabindex="0" loading="lazy"><figcaption>2018070117435683</figcaption></figure>
 <h2 id="状态详解" tabindex="-1"><a class="header-anchor" href="#状态详解"><span>状态详解</span></a></h2>
 <h3 id="初始状态" tabindex="-1"><a class="header-anchor" href="#初始状态"><span>初始状态</span></a></h3>
 <p>实现Runnable接口和继承Thread可以得到一个线程类，new一个实例出来，线程就进入了初始状态。</p>

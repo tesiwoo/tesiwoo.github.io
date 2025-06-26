@@ -167,31 +167,28 @@ export default defineUserConfig({
     updateBar: {
       // 最近更新栏
       showToArticle: false, // 显示到文章页底部，默认true
-      moreArticle: '/archives', // “更多文章”跳转的页面，默认'/archives'
+      moreArticle: '/archives', // "更多文章"跳转的页面，默认'/archives'
     },
     category: false, // 是否打开分类功能，默认true。
     tag: true, // 是否打开标签功能，默认true。
     archive: true // 是否打开归档功能，默认true。
   }),
+  markdown: {
+    // 启用 figure
+    figure: true,
+    // 启用图片懒加载
+    imgLazyload: true,
+    // 启用图片标记
+    imgMark: true,
+    // 启用图片大小
+    imgSize: true,
+  },
   plugins: [
-  ['@vuepress/plugin-shiki', { 
-    theme: 'github-dark',
-    lineNumbers: true 
-  }],
+    ['@vuepress/plugin-shiki', {
+      theme: 'github-dark',
+      lineNumbers: true
+    }],
     ['vuepress-plugin-code-copy', true],
-    [
-      'vuepress-plugin-right-anchor',
-      {
-        showDepth: 2,
-        ignore: [],
-        expand: {
-          trigger: 'hover',
-          clickModeDefaultOpen: true
-        },
-        customClass: 'your-customClass',
-        disableGlobalUI: false,
-      }
-    ],
     '@vuepress/active-header-links',
     {
       sidebarLinkSelector: '.sidebar-link',

@@ -1,5 +1,7 @@
 ---
 home: true
+heroText: 特拾伍的笔记们
+tagline: 一名初级程序猿想养成写笔记的习惯而写的笔记
 heroImage: /logo.png
 features:
 - title: 自定义
