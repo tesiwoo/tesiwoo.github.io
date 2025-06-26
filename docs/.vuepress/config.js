@@ -173,12 +173,11 @@ export default defineUserConfig({
     tag: true, // 是否打开标签功能，默认true。
     archive: true // 是否打开归档功能，默认true。
   }),
-  markdown: {
-    code: {
-      lineNumbers: true, // 代码块显示行号
-    }
-  },
   plugins: [
+  ['@vuepress/plugin-shiki', { 
+    theme: 'github-dark',
+    lineNumbers: true 
+  }],
     ['vuepress-plugin-code-copy', true],
     [
       'vuepress-plugin-right-anchor',
