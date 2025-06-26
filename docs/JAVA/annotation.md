@@ -52,8 +52,8 @@ Java语言中的类、方法、变量、参数和包等都可以被标注。和J
 - ElementType.LOCAL_VARIABLE 可以应用于局部变量。
 - ElementType.ANNOTATION_TYPE 可以应用于注释类型。
 - ElementType.PACKAGE 可以应用于包声明。
-- ElementType.TYPE_PARAMETER
-- ElementType.TYPE_USE
+- ElementType.TYPE_PARAMETER。
+- ElementType.TYPE_USE。
 
 4. **@Inherited**
 
