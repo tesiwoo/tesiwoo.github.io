@@ -20,7 +20,7 @@ export default defineUserConfig({
       },
       {
         text: 'JAVA',
-        link: '/java/collections.md'
+        link: '/JAVA/collections.md'
       },
       {
         text: '数据库',
