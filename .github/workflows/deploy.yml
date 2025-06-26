@@ -11,7 +11,7 @@ jobs:
   docs:
     runs-on: ubuntu-latest
     permissions:
-        contents: true
+        contents: 'true'
         pages: write
         id-token: write
 
