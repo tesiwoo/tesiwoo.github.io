@@ -1,5 +1,5 @@
-import comp from "D:/study/tesiwoo.github.io/docs/.vuepress/.temp/pages/JAVA/UML.html.vue"
-const data = JSON.parse("{\"path\":\"/JAVA/UML.html\",\"title\":\"UML 介绍\",\"lang\":\"en-US\",\"frontmatter\":{},\"git\":{},\"filePathRelative\":\"JAVA/UML.md\"}")
+import comp from "D:/study/tesiwoo.github.io/docs/.vuepress/.temp/pages/java/UML.html.vue"
+const data = JSON.parse("{\"path\":\"/java/UML.html\",\"title\":\"UML 介绍\",\"lang\":\"en-US\",\"frontmatter\":{},\"git\":{},\"filePathRelative\":\"java/UML.md\"}")
 export { comp, data }
 
 if (import.meta.webpackHot) {

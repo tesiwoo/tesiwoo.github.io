@@ -1,5 +1,5 @@
-import comp from "D:/study/tesiwoo.github.io/docs/.vuepress/.temp/pages/JAVA/list.html.vue"
-const data = JSON.parse("{\"path\":\"/JAVA/list.html\",\"title\":\"List（列表）\",\"lang\":\"en-US\",\"frontmatter\":{},\"git\":{},\"filePathRelative\":\"JAVA/list.md\"}")
+import comp from "D:/study/tesiwoo.github.io/docs/.vuepress/.temp/pages/java/list.html.vue"
+const data = JSON.parse("{\"path\":\"/java/list.html\",\"title\":\"List（列表）\",\"lang\":\"en-US\",\"frontmatter\":{},\"git\":{},\"filePathRelative\":\"java/list.md\"}")
 export { comp, data }
 
 if (import.meta.webpackHot) {

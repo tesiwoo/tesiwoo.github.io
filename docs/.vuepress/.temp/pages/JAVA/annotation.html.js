@@ -1,5 +1,5 @@
-import comp from "D:/study/tesiwoo.github.io/docs/.vuepress/.temp/pages/JAVA/annotation.html.vue"
-const data = JSON.parse("{\"path\":\"/JAVA/annotation.html\",\"title\":\"注解\",\"lang\":\"en-US\",\"frontmatter\":{},\"git\":{},\"filePathRelative\":\"JAVA/annotation.md\"}")
+import comp from "D:/study/tesiwoo.github.io/docs/.vuepress/.temp/pages/java/annotation.html.vue"
+const data = JSON.parse("{\"path\":\"/java/annotation.html\",\"title\":\"注解\",\"lang\":\"en-US\",\"frontmatter\":{},\"git\":{},\"filePathRelative\":\"java/annotation.md\"}")
 export { comp, data }
 
 if (import.meta.webpackHot) {

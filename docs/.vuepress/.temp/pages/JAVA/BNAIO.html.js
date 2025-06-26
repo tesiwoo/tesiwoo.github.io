@@ -1,5 +1,5 @@
-import comp from "D:/study/tesiwoo.github.io/docs/.vuepress/.temp/pages/JAVA/BNAIO.html.vue"
-const data = JSON.parse("{\"path\":\"/JAVA/BNAIO.html\",\"title\":\"\",\"lang\":\"en-US\",\"frontmatter\":{},\"git\":{},\"filePathRelative\":\"JAVA/BNAIO.md\"}")
+import comp from "D:/study/tesiwoo.github.io/docs/.vuepress/.temp/pages/java/BNAIO.html.vue"
+const data = JSON.parse("{\"path\":\"/java/BNAIO.html\",\"title\":\"\",\"lang\":\"en-US\",\"frontmatter\":{},\"git\":{},\"filePathRelative\":\"java/BNAIO.md\"}")
 export { comp, data }
 
 if (import.meta.webpackHot) {
