@@ -20,7 +20,7 @@
 <p>最高权限为root，可以操作一切！</p>
 <h2 id="关机" tabindex="-1"><a class="header-anchor" href="#关机"><span>关机</span></a></h2>
 <p>在linux领域内大多用在服务器上</p>
-<div class="language-base line-numbers-mode" data-highlighter="shiki" data-ext="base" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code class="language-base"><span class="line"><span>sync # 将数据由内存同步到硬盘中。</span></span>
+<div class="language-base line-numbers-mode" data-highlighter="shiki" data-ext="base" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code" v-pre=""><code class="language-base"><span class="line"><span>sync # 将数据由内存同步到硬盘中。</span></span>
 <span class="line"><span></span></span>
 <span class="line"><span>shutdown # 关机指令，你可以man shutdown 来看一下帮助文档。例如你可以运行如下命令关机：</span></span>
 <span class="line"><span></span></span>
@@ -93,9 +93,9 @@
 <p>cd：切换目录</p>
 <p>cd是Change Directory的缩写，这是用来变换工作目录的命令。</p>
 <p>语法：</p>
-<div class="language-base line-numbers-mode" data-highlighter="shiki" data-ext="base" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code class="language-base"><span class="line"><span>cd [相对路径或绝对路径]</span></span></code></pre>
+<div class="language-base line-numbers-mode" data-highlighter="shiki" data-ext="base" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code" v-pre=""><code class="language-base"><span class="line"><span>cd [相对路径或绝对路径]</span></span></code></pre>
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p>测试：</p>
-<div class="language-base line-numbers-mode" data-highlighter="shiki" data-ext="base" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code class="language-base"><span class="line"><span># 切换到用户目录下</span></span>
+<div class="language-base line-numbers-mode" data-highlighter="shiki" data-ext="base" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code" v-pre=""><code class="language-base"><span class="line"><span># 切换到用户目录下</span></span>
 <span class="line"><span>[root@kuangshen /]# cd home  </span></span>
 <span class="line"><span></span></span>
 <span class="line"><span># 使用 mkdir 命令创建 kuangstudy 目录</span></span>
@@ -117,7 +117,7 @@
 <p>pwd：显示目前所在的目录</p>
 <p>选项与参数：-p：显示出确实的路径，而非使用连接（link）路径</p>
 <p>测试：```base</p>
-<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code class="language-"><span class="line"><span># 单纯显示出目前的工作目录</span></span>
+<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code" v-pre=""><code class="language-"><span class="line"><span># 单纯显示出目前的工作目录</span></span>
 <span class="line"><span>[root@kuangshen ~]# pwd</span></span>
 <span class="line"><span>/root</span></span>
 <span class="line"><span></span></span>
@@ -224,14 +224,14 @@
 <p>Linux文件属性有两种设置方法，一种是数字，一种是符号。</p>
 <p>Linux文件的基本权限就有九个，分别是owner/group/others三种身份各有自己的read/write/execute权限。</p>
 <p>先复习一下刚刚上面提到的数据：文件的权限字符为：『-rwxrwxrwx』， 这九个权限是三个三个一组的！其中，我们可以使用数字来代表各个权限，各权限的分数对照表如下：</p>
-<div class="language-base line-numbers-mode" data-highlighter="shiki" data-ext="base" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code class="language-base"><span class="line"><span>r:4     w:2         x:1</span></span></code></pre>
+<div class="language-base line-numbers-mode" data-highlighter="shiki" data-ext="base" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code" v-pre=""><code class="language-base"><span class="line"><span>r:4     w:2         x:1</span></span></code></pre>
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p>每种身份(owner/group/others)各自的三个权限(r/w/x)分数是需要累加的，例如当权限为：[-rwxrwx---] 分数则是：</p>
 <ul>
 <li>owner = rwx = 4+2+1 = 7</li>
 <li>group = rwx = 4+2+1 = 7</li>
 <li>others= --- = 0+0+0 = 0</li>
 </ul>
-<div class="language-base line-numbers-mode" data-highlighter="shiki" data-ext="base" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code class="language-base"><span class="line"><span>chmod 770 filename</span></span></code></pre>
+<div class="language-base line-numbers-mode" data-highlighter="shiki" data-ext="base" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code" v-pre=""><code class="language-base"><span class="line"><span>chmod 770 filename</span></span></code></pre>
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div></li>
 </ul>
 </blockquote>
@@ -254,7 +254,7 @@
 <p>cat 由第一行开始显示文件内容</p>
 </blockquote>
 <p>语法：</p>
-<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code class="language-"><span class="line"><span>cat [-AbEnTv]</span></span></code></pre>
+<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code" v-pre=""><code class="language-"><span class="line"><span>cat [-AbEnTv]</span></span></code></pre>
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p>选项与参数：</p>
 <ul>
 <li>-A ：相当於 -vET 的整合选项，可列出一些特殊字符而不是空白而已；</li>
@@ -268,7 +268,7 @@
 <p>tac</p>
 </blockquote>
 <p>tac与cat命令刚好相反，文件内容从最后一行开始显示，可以看出 tac 是 cat 的倒着写！如：</p>
-<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code class="language-"><span class="line"><span>[root@kuangshen ~]# tac /etc/sysconfig/network-scripts/ifcfg-eth0</span></span>
+<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code" v-pre=""><code class="language-"><span class="line"><span>[root@kuangshen ~]# tac /etc/sysconfig/network-scripts/ifcfg-eth0</span></span>
 <span class="line"><span>ONBOOT=yes</span></span>
 <span class="line"><span>BOOTPROTO=dhcp</span></span>
 <span class="line"><span>DEVICE=eth0</span></span></code></pre>
@@ -276,7 +276,7 @@
 <p>nl  显示行号</p>
 </blockquote>
 <p>语法：</p>
-<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code class="language-"><span class="line"><span>nl [-bnw] 文件</span></span></code></pre>
+<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code" v-pre=""><code class="language-"><span class="line"><span>nl [-bnw] 文件</span></span></code></pre>
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p>选项与参数：</p>
 <ul>
 <li>-b ：指定行号指定的方式，主要有两种：-b a ：表示不论是否为空行，也同样列出行号(类似 cat -n)；-b t ：如果有空行，空的那一行不要列出行号(默认值)；</li>
@@ -295,7 +295,7 @@
 <li>q    ：代表立刻离开 more ，不再显示该文件内容。</li>
 <li>b 或 [ctrl]-b ：代表往回翻页，不过这动作只对文件有用，对管线无用。</li>
 </ul>
-<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code class="language-"><span class="line"><span>[root@kuangshen etc]# more /etc/csh.login....(中间省略)....--More--(28%) # 重点在这一行喔！你的光标也会在这里等待你的命令</span></span></code></pre>
+<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code" v-pre=""><code class="language-"><span class="line"><span>[root@kuangshen etc]# more /etc/csh.login....(中间省略)....--More--(28%) # 重点在这一行喔！你的光标也会在这里等待你的命令</span></span></code></pre>
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><blockquote>
 <p>less  一页一页翻动，以下实例输出/etc/man.config文件的内容：</p>
 </blockquote>
@@ -310,26 +310,26 @@
 <li>N   ：反向的重复前一个搜寻 (与 / 或 ? 有关！)</li>
 <li>q   ：离开 less 这个程序；</li>
 </ul>
-<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code class="language-"><span class="line"><span>[root@kuangshen etc]# more /etc/csh.login....(中间省略)....:   # 这里可以等待你输入命令！</span></span></code></pre>
+<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code" v-pre=""><code class="language-"><span class="line"><span>[root@kuangshen etc]# more /etc/csh.login....(中间省略)....:   # 这里可以等待你输入命令！</span></span></code></pre>
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><blockquote>
 <p>head  取出文件前面几行</p>
 </blockquote>
 <p>语法：</p>
-<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code class="language-"><span class="line"><span>head [-n number] 文件</span></span></code></pre>
+<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code" v-pre=""><code class="language-"><span class="line"><span>head [-n number] 文件</span></span></code></pre>
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p>选项与参数：<strong>-n</strong> 后面接数字，代表显示几行的意思！</p>
 <p>默认的情况中，显示前面 10 行！若要显示前 20 行，就得要这样：</p>
-<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code class="language-"><span class="line"><span>[root@kuangshen etc]# head -n 20 /etc/csh.login</span></span></code></pre>
+<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code" v-pre=""><code class="language-"><span class="line"><span>[root@kuangshen etc]# head -n 20 /etc/csh.login</span></span></code></pre>
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><blockquote>
 <p>tail  取出文件后面几行</p>
 </blockquote>
 <p>语法：</p>
-<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code class="language-"><span class="line"><span>tail [-n number] 文件</span></span></code></pre>
+<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code" v-pre=""><code class="language-"><span class="line"><span>tail [-n number] 文件</span></span></code></pre>
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p>选项与参数：</p>
 <ul>
 <li>-n ：后面接数字，代表显示几行的意思</li>
 </ul>
 <p>默认的情况中，显示最后 10 行！若要显示最后 20 行，就得要这样：</p>
-<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code class="language-"><span class="line"><span>[root@kuangshen etc]# tail -n 20 /etc/csh.login</span></span></code></pre>
+<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code" v-pre=""><code class="language-"><span class="line"><span>[root@kuangshen etc]# tail -n 20 /etc/csh.login</span></span></code></pre>
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><blockquote>
 <p>拓展：Linux 链接概念</p>
 </blockquote>
@@ -341,9 +341,9 @@
 <p><strong>软连接</strong></p>
 <p>另外一种连接称之为符号连接（Symbolic Link），也叫软连接。软链接文件有类似于 Windows 的快捷方式。它实际上是一个特殊的文件。在符号连接中，文件实际上是一个文本文件，其中包含的有另一文件的位置信息。比如：A 是 B 的软链接（A 和 B 都是文件名），A 的目录项中的 inode 节点号与 B 的目录项中的 inode 节点号不相同，A 和 B 指向的是两个不同的 inode，继而指向两块不同的数据块。但是 A 的数据块中存放的只是 B 的路径名（可以根据这个找到 B 的目录项）。A 和 B 之间是“主从”关系，如果 B 被删除了，A 仍然存在（因为两个是不同的文件），但指向的是一个无效的链接。</p>
 <p><strong>测试：</strong></p>
-<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code class="language-"><span class="line"><span>[root@kuangshen /]# cd /home[root@kuangshen home]# touch f1 # 创建一个测试文件f1[root@kuangshen home]# lsf1[root@kuangshen home]# ln f1 f2     # 创建f1的一个硬连接文件f2[root@kuangshen home]# ln -s f1 f3   # 创建f1的一个符号连接文件f3[root@kuangshen home]# ls -li       # -i参数显示文件的inode节点信息397247 -rw-r--r-- 2 root root     0 Mar 13 00:50 f1397247 -rw-r--r-- 2 root root     0 Mar 13 00:50 f2397248 lrwxrwxrwx 1 root root     2 Mar 13 00:50 f3 -> f1</span></span></code></pre>
+<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code" v-pre=""><code class="language-"><span class="line"><span>[root@kuangshen /]# cd /home[root@kuangshen home]# touch f1 # 创建一个测试文件f1[root@kuangshen home]# lsf1[root@kuangshen home]# ln f1 f2     # 创建f1的一个硬连接文件f2[root@kuangshen home]# ln -s f1 f3   # 创建f1的一个符号连接文件f3[root@kuangshen home]# ls -li       # -i参数显示文件的inode节点信息397247 -rw-r--r-- 2 root root     0 Mar 13 00:50 f1397247 -rw-r--r-- 2 root root     0 Mar 13 00:50 f2397248 lrwxrwxrwx 1 root root     2 Mar 13 00:50 f3 -> f1</span></span></code></pre>
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p>从上面的结果中可以看出，硬连接文件 f2 与原文件 f1 的 inode 节点相同，均为 397247，然而符号连接文件的 inode 节点不同。</p>
-<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code class="language-"><span class="line"><span># echo 字符串输出 >> f1 输出到 f1文件[root@kuangshen home]# echo "I am f1 file" >>f1[root@kuangshen home]# cat f1I am f1 file[root@kuangshen home]# cat f2I am f1 file[root@kuangshen home]# cat f3I am f1 file[root@kuangshen home]# rm -f f1[root@kuangshen home]# cat f2I am f1 file[root@kuangshen home]# cat f3cat: f3: No such file or directory</span></span></code></pre>
+<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code" v-pre=""><code class="language-"><span class="line"><span># echo 字符串输出 >> f1 输出到 f1文件[root@kuangshen home]# echo "I am f1 file" >>f1[root@kuangshen home]# cat f1I am f1 file[root@kuangshen home]# cat f2I am f1 file[root@kuangshen home]# cat f3I am f1 file[root@kuangshen home]# rm -f f1[root@kuangshen home]# cat f2I am f1 file[root@kuangshen home]# cat f3cat: f3: No such file or directory</span></span></code></pre>
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p>通过上面的测试可以看出：当删除原始文件 f1 后，硬连接 f2 不受影响，但是符号连接 f1 文件无效；</p>
 <p>依此您可以做一些相关的测试，可以得到以下全部结论：</p>
 <ul>
@@ -713,7 +713,7 @@
 <p>用户账号的管理工作主要涉及到用户账号的添加、修改和删除。</p>
 <p>添加用户账号就是在系统中创建一个新账号，然后为新账号分配用户号、用户组、主目录和登录Shell等资源。</p>
 <h3 id="添加账号-useradd" tabindex="-1"><a class="header-anchor" href="#添加账号-useradd"><span><strong>添加账号 useradd</strong></span></a></h3>
-<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code class="language-"><span class="line"><span>useradd 选项 用户名</span></span></code></pre>
+<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code" v-pre=""><code class="language-"><span class="line"><span>useradd 选项 用户名</span></span></code></pre>
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p>参数说明：</p>
 <ul>
 <li>
@@ -740,7 +740,7 @@
 </li>
 </ul>
 <p>测试：</p>
-<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code class="language-"><span class="line"><span># 此命令创建了一个用户chuyx，其中-m选项用来为登录名chuyx生一个主目录 /home/chuyx[root@chuyx home]# useradd -m chuyx</span></span></code></pre>
+<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code" v-pre=""><code class="language-"><span class="line"><span># 此命令创建了一个用户chuyx，其中-m选项用来为登录名chuyx生一个主目录 /home/chuyx[root@chuyx home]# useradd -m chuyx</span></span></code></pre>
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p>增加用户账号就是在/etc/passwd文件中为新用户增加一条记录，同时更新其他系统文件如/etc/shadow, /etc/group等。</p>
 <h3 id="linux下如何切换用户" tabindex="-1"><a class="header-anchor" href="#linux下如何切换用户"><span><strong>Linux下如何切换用户</strong></span></a></h3>
 <p>1.切换用户的命令为：su username 【username是你的用户名哦】</p>
@@ -753,23 +753,23 @@
 <p>如果一个用户的账号不再使用，可以从系统中删除。</p>
 <p>删除用户账号就是要将/etc/passwd等系统文件中的该用户记录删除，必要时还删除用户的主目录。</p>
 <p>删除一个已有的用户账号使用userdel命令，其格式如下：</p>
-<div class="language-base line-numbers-mode" data-highlighter="shiki" data-ext="base" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code class="language-base"><span class="line"><span>userdel 选项 用户名</span></span></code></pre>
+<div class="language-base line-numbers-mode" data-highlighter="shiki" data-ext="base" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code" v-pre=""><code class="language-base"><span class="line"><span>userdel 选项 用户名</span></span></code></pre>
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p>常用的选项是 <strong>-r</strong>，它的作用是把用户的主目录一起删除。</p>
-<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code class="language-"><span class="line"><span>[root@kuangshen home]# userdel -r kuangshen</span></span></code></pre>
+<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code" v-pre=""><code class="language-"><span class="line"><span>[root@kuangshen home]# userdel -r kuangshen</span></span></code></pre>
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p>此命令删除用户kuangshen在系统文件中（主要是/etc/passwd, /etc/shadow, /etc/group等）的记录，同时删除用户的主目录。</p>
 <h3 id="修改帐号" tabindex="-1"><a class="header-anchor" href="#修改帐号"><span>修改帐号</span></a></h3>
 <p>修改用户账号就是根据实际情况更改用户的有关属性，如用户号、主目录、用户组、登录Shell等。</p>
 <p>修改已有用户的信息使用usermod命令，其格式如下：</p>
-<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code class="language-"><span class="line"><span>usermod 选项 用户名</span></span></code></pre>
+<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code" v-pre=""><code class="language-"><span class="line"><span>usermod 选项 用户名</span></span></code></pre>
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p>常用的选项包括-c, -d, -m, -g, -G, -s, -u以及-o等，这些选项的意义与useradd命令中的选项一样，可以为用户指定新的资源值。</p>
 <p>例如：</p>
-<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code class="language-"><span class="line"><span># usermod -s /bin/ksh -d /home/z –g developer kuangshen</span></span></code></pre>
+<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code" v-pre=""><code class="language-"><span class="line"><span># usermod -s /bin/ksh -d /home/z –g developer kuangshen</span></span></code></pre>
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p>此命令将用户kuangshen的登录Shell修改为ksh，主目录改为/home/z，用户组改为developer。</p>
 <h3 id="用户口令的管理" tabindex="-1"><a class="header-anchor" href="#用户口令的管理"><span>用户口令的管理</span></a></h3>
 <p>用户管理的一项重要内容是用户口令的管理。用户账号刚创建时没有口令，但是被系统锁定，无法使用，必须为其指定口令后才可以使用，即使是指定空口令。</p>
 <p>指定和修改用户口令的Shell命令是passwd。超级用户可以为自己和其他用户指定口令，普通用户只能用它修改自己的口令。</p>
 <p>命令的格式为：</p>
-<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code class="language-"><span class="line"><span>passwd 选项 用户名</span></span></code></pre>
+<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code" v-pre=""><code class="language-"><span class="line"><span>passwd 选项 用户名</span></span></code></pre>
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p>可使用的选项：</p>
 <ul>
 <li>-l 锁定口令，即禁用账号。</li>
@@ -779,58 +779,58 @@
 </ul>
 <p>如果默认用户名，则修改当前用户的口令。</p>
 <p>例如，假设当前用户是kuangshen，则下面的命令修改该用户自己的口令：</p>
-<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code class="language-"><span class="line"><span>$ passwdOld password:******New password:*******Re-enter new password:*******</span></span></code></pre>
+<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code" v-pre=""><code class="language-"><span class="line"><span>$ passwdOld password:******New password:*******Re-enter new password:*******</span></span></code></pre>
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p>如果是超级用户，可以用下列形式指定任何用户的口令：</p>
-<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code class="language-"><span class="line"><span># passwd kuangshenNew password:*******Re-enter new password:*******</span></span></code></pre>
+<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code" v-pre=""><code class="language-"><span class="line"><span># passwd kuangshenNew password:*******Re-enter new password:*******</span></span></code></pre>
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p>普通用户修改自己的口令时，passwd命令会先询问原口令，验证后再要求用户输入两遍新口令，如果两次输入的口令一致，则将这个口令指定给用户；而超级用户为用户指定口令时，就不需要知道原口令。</p>
 <p>为了系统安全起见，用户应该选择比较复杂的口令，例如最好使用8位长的口令，口令中包含有大写、小写字母和数字，并且应该与姓名、生日等不相同。</p>
 <p>为用户指定空口令时，执行下列形式的命令：</p>
-<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code class="language-"><span class="line"><span># passwd -d kuangshen</span></span></code></pre>
+<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code" v-pre=""><code class="language-"><span class="line"><span># passwd -d kuangshen</span></span></code></pre>
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p>此命令将用户 kuangshen的口令删除，这样用户 kuangshen下一次登录时，系统就不再允许该用户登录了。</p>
 <p>passwd 命令还可以用 -l(lock) 选项锁定某一用户，使其不能登录，例如：</p>
-<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code class="language-"><span class="line"><span># passwd -l kuangshen</span></span></code></pre>
+<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code" v-pre=""><code class="language-"><span class="line"><span># passwd -l kuangshen</span></span></code></pre>
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><h1 id="用户组管理" tabindex="-1"><a class="header-anchor" href="#用户组管理"><span>用户组管理</span></a></h1>
 <p>每个用户都有一个用户组，系统可以对一个用户组中的所有用户进行集中管理。不同Linux 系统对用户组的规定有所不同，如Linux下的用户属于与它同名的用户组，这个用户组在创建用户时同时创建。</p>
 <p>用户组的管理涉及用户组的添加、删除和修改。组的增加、删除和修改实际上就是对/etc/group文件的更新。</p>
 <blockquote>
 <p>增加一个新的用户组使用groupadd命令</p>
 </blockquote>
-<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code class="language-"><span class="line"><span>groupadd 选项 用户组</span></span></code></pre>
+<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code" v-pre=""><code class="language-"><span class="line"><span>groupadd 选项 用户组</span></span></code></pre>
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p>可以使用的选项有：</p>
 <ul>
 <li>-g GID 指定新用户组的组标识号（GID）。</li>
 <li>-o 一般与-g选项同时使用，表示新用户组的GID可以与系统已有用户组的GID相同。</li>
 </ul>
 <p>实例1：</p>
-<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code class="language-"><span class="line"><span># groupadd group1</span></span></code></pre>
+<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code" v-pre=""><code class="language-"><span class="line"><span># groupadd group1</span></span></code></pre>
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p>此命令向系统中增加了一个新组group1，新组的组标识号是在当前已有的最大组标识号的基础上加1。</p>
 <p>实例2：</p>
-<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code class="language-"><span class="line"><span># groupadd -g 101 group2</span></span></code></pre>
+<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code" v-pre=""><code class="language-"><span class="line"><span># groupadd -g 101 group2</span></span></code></pre>
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p>此命令向系统中增加了一个新组group2，同时指定新组的组标识号是101。</p>
 <blockquote>
 <p>如果要删除一个已有的用户组，使用groupdel命令</p>
 </blockquote>
-<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code class="language-"><span class="line"><span>groupdel 用户组</span></span></code></pre>
+<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code" v-pre=""><code class="language-"><span class="line"><span>groupdel 用户组</span></span></code></pre>
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p>例如：</p>
-<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code class="language-"><span class="line"><span># groupdel group1</span></span></code></pre>
+<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code" v-pre=""><code class="language-"><span class="line"><span># groupdel group1</span></span></code></pre>
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p>此命令从系统中删除组group1。</p>
 <blockquote>
 <p>修改用户组的属性使用groupmod命令</p>
 </blockquote>
-<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code class="language-"><span class="line"><span>groupmod 选项 用户组</span></span></code></pre>
+<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code" v-pre=""><code class="language-"><span class="line"><span>groupmod 选项 用户组</span></span></code></pre>
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p>常用的选项有：</p>
 <ul>
 <li>-g GID 为用户组指定新的组标识号。</li>
 <li>-o 与-g选项同时使用，用户组的新GID可以与系统已有用户组的GID相同。</li>
 <li>-n新用户组 将用户组的名字改为新名字</li>
 </ul>
-<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code class="language-"><span class="line"><span># 此命令将组group2的组标识号修改为102。groupmod -g 102 group2# 将组group2的标识号改为10000，组名修改为group3。groupmod –g 10000 -n group3 group2</span></span></code></pre>
+<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code" v-pre=""><code class="language-"><span class="line"><span># 此命令将组group2的组标识号修改为102。groupmod -g 102 group2# 将组group2的标识号改为10000，组名修改为group3。groupmod –g 10000 -n group3 group2</span></span></code></pre>
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><blockquote>
 <p>切换组</p>
 </blockquote>
 <p>如果一个用户同时属于多个用户组，那么用户可以在用户组之间切换，以便具有其他用户组的权限。</p>
 <p>用户可以在登录后，使用命令newgrp切换到其他用户组，这个命令的参数就是目的用户组。例如：</p>
-<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code class="language-"><span class="line"><span>$ newgrp root</span></span></code></pre>
+<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code" v-pre=""><code class="language-"><span class="line"><span>$ newgrp root</span></span></code></pre>
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p>这条命令将当前用户切换到root用户组，前提条件是root用户组确实是该用户的主组或附加组。</p>
 <blockquote>
 <p>/etc/passwd</p>
@@ -841,9 +841,9 @@
 <p><strong>/etc/passwd文件是用户管理工作涉及的最重要的一个文件。</strong></p>
 <p>Linux系统中的每个用户都在/etc/passwd文件中有一个对应的记录行，它记录了这个用户的一些基本属性。</p>
 <p>这个文件对所有用户都是可读的。它的内容类似下面的例子：</p>
-<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code class="language-"><span class="line"><span>＃ cat /etc/passwdroot:x:0:0:Superuser:/:daemon:x:1:1:System daemons:/etc:bin:x:2:2:Owner of system commands:/bin:sys:x:3:3:Owner of system files:/usr/sys:adm:x:4:4:System accounting:/usr/adm:uucp:x:5:5:UUCP administrator:/usr/lib/uucp:auth:x:7:21:Authentication administrator:/tcb/files/auth:cron:x:9:16:Cron daemon:/usr/spool/cron:listen:x:37:4:Network daemon:/usr/net/nls:lp:x:71:18:Printer administrator:/usr/spool/lp:</span></span></code></pre>
+<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code" v-pre=""><code class="language-"><span class="line"><span>＃ cat /etc/passwdroot:x:0:0:Superuser:/:daemon:x:1:1:System daemons:/etc:bin:x:2:2:Owner of system commands:/bin:sys:x:3:3:Owner of system files:/usr/sys:adm:x:4:4:System accounting:/usr/adm:uucp:x:5:5:UUCP administrator:/usr/lib/uucp:auth:x:7:21:Authentication administrator:/tcb/files/auth:cron:x:9:16:Cron daemon:/usr/spool/cron:listen:x:37:4:Network daemon:/usr/net/nls:lp:x:71:18:Printer administrator:/usr/spool/lp:</span></span></code></pre>
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p>从上面的例子我们可以看到，/etc/passwd中一行记录对应着一个用户，每行记录又被冒号(:)分隔为7个字段，其格式和具体含义如下：</p>
-<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code class="language-"><span class="line"><span>用户名:口令:用户标识号:组标识号:注释性描述:主目录:登录Shell</span></span></code></pre>
+<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code" v-pre=""><code class="language-"><span class="line"><span>用户名:口令:用户标识号:组标识号:注释性描述:主目录:登录Shell</span></span></code></pre>
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p>1）&quot;用户名&quot;是代表用户账号的字符串。</p>
 <p>通常长度不超过8个字符，并且由大小写字母和/或数字组成。登录名中不能有冒号(😃，因为冒号在这里是分隔符。</p>
 <p>为了兼容起见，登录名中最好不要包含点字符(.)，并且不使用连字符(-)和加号(+)打头。</p>
@@ -866,7 +866,7 @@
 <p>8)系统中有一类用户称为伪用户（pseudo users）。</p>
 <p>这些用户在/etc/passwd文件中也占有一条记录，但是不能登录，因为它们的登录Shell为空。它们的存在主要是方便系统管理，满足相应的系统进程对文件属主的要求。</p>
 <p>常见的伪用户如下所示：</p>
-<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code class="language-"><span class="line"><span>伪 用 户 含 义bin 拥有可执行的用户命令文件sys 拥有系统文件adm 拥有帐户文件uucp UUCP使用lp lp或lpd子系统使用nobody NFS使用</span></span></code></pre>
+<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code" v-pre=""><code class="language-"><span class="line"><span>伪 用 户 含 义bin 拥有可执行的用户命令文件sys 拥有系统文件adm 拥有帐户文件uucp UUCP使用lp lp或lpd子系统使用nobody NFS使用</span></span></code></pre>
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><blockquote>
 <p>/etc/shadow</p>
 </blockquote>
@@ -874,7 +874,7 @@
 <p>由于/etc/passwd文件是所有用户都可读的，如果用户的密码太简单或规律比较明显的话，一台普通的计算机就能够很容易地将它破解，因此对安全性要求较高的Linux系统都把加密后的口令字分离出来，单独存放在一个文件中，这个文件是/etc/shadow文件。有超级用户才拥有该文件读权限，这就保证了用户密码的安全性。</p>
 <p><strong>2、/etc/shadow中的记录行与/etc/passwd中的一一对应，它由pwconv命令根据/etc/passwd中的数据自动产生</strong></p>
 <p>它的文件格式与/etc/passwd类似，由若干个字段组成，字段之间用&quot;:&quot;隔开。这些字段是：</p>
-<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code class="language-"><span class="line"><span>登录名:加密口令:最后一次修改时间:最小时间间隔:最大时间间隔:警告时间:不活动时间:失效时间:标志</span></span></code></pre>
+<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code" v-pre=""><code class="language-"><span class="line"><span>登录名:加密口令:最后一次修改时间:最小时间间隔:最大时间间隔:警告时间:不活动时间:失效时间:标志</span></span></code></pre>
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><ol>
 <li>&quot;登录名&quot;是与/etc/passwd文件中的登录名相一致的用户账号</li>
 <li>&quot;口令&quot;字段存放的是加密后的用户口令字，长度为13个字符。如果为空，则对应用户没有口令，登录时不需要口令；如果含有不属于集合 { ./0-9A-Za-z }中的字符，则对应的用户不能登录。</li>
@@ -894,7 +894,7 @@
 <p>当一个用户同时是多个组中的成员时，在/etc/passwd文件中记录的是用户所属的主组，也就是登录时所属的默认组，而其他组称为附加组。</p>
 <p>用户要访问属于附加组的文件时，必须首先使用newgrp命令使自己成为所要访问的组中的成员。</p>
 <p>用户组的所有信息都存放在/etc/group文件中。此文件的格式也类似于/etc/passwd文件，由冒号(:)隔开若干个字段，这些字段有：</p>
-<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code class="language-"><span class="line"><span>组名:口令:组标识号:组内用户列表</span></span></code></pre>
+<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code" v-pre=""><code class="language-"><span class="line"><span>组名:口令:组标识号:组内用户列表</span></span></code></pre>
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><ol>
 <li>
 <p>&quot;组名&quot;是用户组的名称，由字母或数字构成。与/etc/passwd中的登录名一样，组名不应重复。</p>
@@ -924,7 +924,7 @@
 </blockquote>
 <p>df命令参数功能：检查文件系统的磁盘空间占用情况。可以利用该命令来获取硬盘被占用了多少空间，目前还剩下多少空间等信息。</p>
 <p>语法：</p>
-<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code class="language-"><span class="line"><span>df [-ahikHTm] [目录或文件名]</span></span></code></pre>
+<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code" v-pre=""><code class="language-"><span class="line"><span>df [-ahikHTm] [目录或文件名]</span></span></code></pre>
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p>选项与参数：</p>
 <ul>
 <li>-a ：列出所有的文件系统，包括系统特有的 /proc 等文件系统；</li>
@@ -936,13 +936,13 @@
 <li>-i ：不用硬盘容量，而以 inode 的数量来显示</li>
 </ul>
 <p>测试：</p>
-<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code class="language-"><span class="line"><span># 将系统内所有的文件系统列出来！# 在 Linux 底下如果 df 没有加任何选项# 那么默认会将系统内所有的 (不含特殊内存内的文件系统与 swap) 都以 1 Kbytes 的容量来列出来！[root@kuangshen /]# dfFilesystem     1K-blocks   Used Available Use% Mounted ondevtmpfs          889100       0    889100   0% /devtmpfs             899460     704    898756   1% /dev/shmtmpfs             899460     496    898964   1% /runtmpfs             899460       0    899460   0% /sys/fs/cgroup/dev/vda1       41152812 6586736  32662368  17% /tmpfs             179896       0    179896   0% /run/user/0# 将容量结果以易读的容量格式显示出来[root@kuangshen /]# df -hFilesystem     Size Used Avail Use% Mounted ondevtmpfs       869M     0 869M   0% /devtmpfs           879M 708K 878M   1% /dev/shmtmpfs           879M 496K 878M   1% /runtmpfs           879M     0 879M   0% /sys/fs/cgroup/dev/vda1       40G  6.3G   32G  17% /tmpfs           176M     0 176M   0% /run/user/0# 将系统内的所有特殊文件格式及名称都列出来[root@kuangshen /]# df -aTFilesystem     Type       1K-blocks   Used Available Use% Mounted onsysfs         sysfs               0       0         0    - /sysproc           proc                0       0         0    - /procdevtmpfs       devtmpfs       889100       0    889100   0% /devsecurityfs     securityfs          0       0         0    - /sys/kernel/securitytmpfs         tmpfs          899460     708    898752   1% /dev/shmdevpts         devpts              0       0         0    - /dev/ptstmpfs         tmpfs          899460     496    898964   1% /runtmpfs         tmpfs          899460       0    899460   0% /sys/fs/cgroupcgroup         cgroup              0       0         0    - /sys/fs/cgroup/systemdpstore         pstore              0       0         0    - /sys/fs/pstorecgroup         cgroup              0       0         0    - /sys/fs/cgroup/freezercgroup         cgroup              0       0         0    - /sys/fs/cgroup/cpusetcgroup         cgroup              0       0         0    - /sys/fs/cgroup/hugetlbcgroup         cgroup              0       0         0    - /sys/fs/cgroup/blkiocgroup         cgroup              0       0         0    - /sys/fs/cgroup/net_cls,net_priocgroup         cgroup              0       0         0    - /sys/fs/cgroup/memorycgroup         cgroup              0       0         0    - /sys/fs/cgroup/pidscgroup         cgroup              0       0         0    - /sys/fs/cgroup/cpu,cpuacctcgroup         cgroup              0       0         0    - /sys/fs/cgroup/devicescgroup         cgroup              0       0         0    - /sys/fs/cgroup/perf_eventconfigfs       configfs            0       0         0    - /sys/kernel/config/dev/vda1     ext4         41152812 6586748  32662356  17% /systemd-1      -                   -       -         -    - /proc/sys/fs/binfmt_miscmqueue         mqueue              0       0         0    - /dev/mqueuedebugfs       debugfs             0       0         0    - /sys/kernel/debughugetlbfs     hugetlbfs           0       0         0    - /dev/hugepagestmpfs         tmpfs          179896       0    179896   0% /run/user/0binfmt_misc   binfmt_misc         0       0         0    - /proc/sys/fs/binfmt_misc# 将 /etc 底下的可用的磁盘容量以易读的容量格式显示[root@kuangshen /]# df -h /etcFilesystem     Size Used Avail Use% Mounted on/dev/vda1       40G  6.3G   32G  17% /</span></span></code></pre>
+<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code" v-pre=""><code class="language-"><span class="line"><span># 将系统内所有的文件系统列出来！# 在 Linux 底下如果 df 没有加任何选项# 那么默认会将系统内所有的 (不含特殊内存内的文件系统与 swap) 都以 1 Kbytes 的容量来列出来！[root@kuangshen /]# dfFilesystem     1K-blocks   Used Available Use% Mounted ondevtmpfs          889100       0    889100   0% /devtmpfs             899460     704    898756   1% /dev/shmtmpfs             899460     496    898964   1% /runtmpfs             899460       0    899460   0% /sys/fs/cgroup/dev/vda1       41152812 6586736  32662368  17% /tmpfs             179896       0    179896   0% /run/user/0# 将容量结果以易读的容量格式显示出来[root@kuangshen /]# df -hFilesystem     Size Used Avail Use% Mounted ondevtmpfs       869M     0 869M   0% /devtmpfs           879M 708K 878M   1% /dev/shmtmpfs           879M 496K 878M   1% /runtmpfs           879M     0 879M   0% /sys/fs/cgroup/dev/vda1       40G  6.3G   32G  17% /tmpfs           176M     0 176M   0% /run/user/0# 将系统内的所有特殊文件格式及名称都列出来[root@kuangshen /]# df -aTFilesystem     Type       1K-blocks   Used Available Use% Mounted onsysfs         sysfs               0       0         0    - /sysproc           proc                0       0         0    - /procdevtmpfs       devtmpfs       889100       0    889100   0% /devsecurityfs     securityfs          0       0         0    - /sys/kernel/securitytmpfs         tmpfs          899460     708    898752   1% /dev/shmdevpts         devpts              0       0         0    - /dev/ptstmpfs         tmpfs          899460     496    898964   1% /runtmpfs         tmpfs          899460       0    899460   0% /sys/fs/cgroupcgroup         cgroup              0       0         0    - /sys/fs/cgroup/systemdpstore         pstore              0       0         0    - /sys/fs/pstorecgroup         cgroup              0       0         0    - /sys/fs/cgroup/freezercgroup         cgroup              0       0         0    - /sys/fs/cgroup/cpusetcgroup         cgroup              0       0         0    - /sys/fs/cgroup/hugetlbcgroup         cgroup              0       0         0    - /sys/fs/cgroup/blkiocgroup         cgroup              0       0         0    - /sys/fs/cgroup/net_cls,net_priocgroup         cgroup              0       0         0    - /sys/fs/cgroup/memorycgroup         cgroup              0       0         0    - /sys/fs/cgroup/pidscgroup         cgroup              0       0         0    - /sys/fs/cgroup/cpu,cpuacctcgroup         cgroup              0       0         0    - /sys/fs/cgroup/devicescgroup         cgroup              0       0         0    - /sys/fs/cgroup/perf_eventconfigfs       configfs            0       0         0    - /sys/kernel/config/dev/vda1     ext4         41152812 6586748  32662356  17% /systemd-1      -                   -       -         -    - /proc/sys/fs/binfmt_miscmqueue         mqueue              0       0         0    - /dev/mqueuedebugfs       debugfs             0       0         0    - /sys/kernel/debughugetlbfs     hugetlbfs           0       0         0    - /dev/hugepagestmpfs         tmpfs          179896       0    179896   0% /run/user/0binfmt_misc   binfmt_misc         0       0         0    - /proc/sys/fs/binfmt_misc# 将 /etc 底下的可用的磁盘容量以易读的容量格式显示[root@kuangshen /]# df -h /etcFilesystem     Size Used Avail Use% Mounted on/dev/vda1       40G  6.3G   32G  17% /</span></span></code></pre>
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><blockquote>
 <p>du</p>
 </blockquote>
 <p>Linux du命令也是查看使用空间的，但是与df命令不同的是Linux du命令是对文件和目录磁盘使用的空间的查看，还是和df命令有一些区别的，这里介绍Linux du命令。</p>
 <p>语法：</p>
-<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code class="language-"><span class="line"><span>du [-ahskm] 文件或目录名称</span></span></code></pre>
+<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code" v-pre=""><code class="language-"><span class="line"><span>du [-ahskm] 文件或目录名称</span></span></code></pre>
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p>选项与参数：</p>
 <ul>
 <li>-a ：列出所有的文件与目录容量，因为默认仅统计目录底下的文件量而已。</li>
@@ -953,7 +953,7 @@
 <li>-m ：以 MBytes 列出容量显示；</li>
 </ul>
 <p>测试：</p>
-<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code class="language-"><span class="line"><span># 只列出当前目录下的所有文件夹容量（包括隐藏文件夹）:# 直接输入 du 没有加任何选项时，则 du 会分析当前所在目录的文件与目录所占用的硬盘空间。[root@kuangshen home]# du16./redis8./www/.oracle_jre_usage  # 包括隐藏文件的目录24./www48.                        # 这个目录(.)所占用的总量# 将文件的容量也列出来[root@kuangshen home]# du -a4./redis/.bash_profile4./redis/.bash_logout    ....中间省略....4./kuangstudy.txt # 有文件的列表了48.# 检查根目录底下每个目录所占用的容量[root@kuangshen home]# du -sm /*0/bin146/boot.....中间省略....0/proc.....中间省略....1/tmp3026/usr  # 系统初期最大就是他了啦！513/var2666/www</span></span></code></pre>
+<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code" v-pre=""><code class="language-"><span class="line"><span># 只列出当前目录下的所有文件夹容量（包括隐藏文件夹）:# 直接输入 du 没有加任何选项时，则 du 会分析当前所在目录的文件与目录所占用的硬盘空间。[root@kuangshen home]# du16./redis8./www/.oracle_jre_usage  # 包括隐藏文件的目录24./www48.                        # 这个目录(.)所占用的总量# 将文件的容量也列出来[root@kuangshen home]# du -a4./redis/.bash_profile4./redis/.bash_logout    ....中间省略....4./kuangstudy.txt # 有文件的列表了48.# 检查根目录底下每个目录所占用的容量[root@kuangshen home]# du -sm /*0/bin146/boot.....中间省略....0/proc.....中间省略....1/tmp3026/usr  # 系统初期最大就是他了啦！513/var2666/www</span></span></code></pre>
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p>通配符 * 来代表每个目录。</p>
 <p>与 df 不一样的是，du 这个命令其实会直接到文件系统内去搜寻所有的文件数据。</p>
 <blockquote>
@@ -962,32 +962,32 @@
 <p>根文件系统之外的其他文件要想能够被访问，都必须通过“关联”至根文件系统上的某个目录来实现，此关联操作即为“挂载”，此目录即为“挂载点”,解除此关联关系的过程称之为“卸载”</p>
 <p>Linux 的磁盘挂载使用mount命令，卸载使用umount命令。</p>
 <p>磁盘挂载语法：</p>
-<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code class="language-"><span class="line"><span>mount [-t 文件系统] [-L Label名] [-o 额外选项] [-n] 装置文件名 挂载点</span></span></code></pre>
+<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code" v-pre=""><code class="language-"><span class="line"><span>mount [-t 文件系统] [-L Label名] [-o 额外选项] [-n] 装置文件名 挂载点</span></span></code></pre>
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p>测试：</p>
-<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code class="language-"><span class="line"><span># 将 /dev/hdc6 挂载到 /mnt/hdc6 上面！[root@www ~]# mkdir /mnt/hdc6[root@www ~]# mount /dev/hdc6 /mnt/hdc6[root@www ~]# dfFilesystem           1K-blocks     Used Available Use% Mounted on/dev/hdc6              1976312     42072   1833836   3% /mnt/hdc6</span></span></code></pre>
+<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code" v-pre=""><code class="language-"><span class="line"><span># 将 /dev/hdc6 挂载到 /mnt/hdc6 上面！[root@www ~]# mkdir /mnt/hdc6[root@www ~]# mount /dev/hdc6 /mnt/hdc6[root@www ~]# dfFilesystem           1K-blocks     Used Available Use% Mounted on/dev/hdc6              1976312     42072   1833836   3% /mnt/hdc6</span></span></code></pre>
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p>磁盘卸载命令 umount 语法：</p>
-<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code class="language-"><span class="line"><span>umount [-fn] 装置文件名或挂载点</span></span></code></pre>
+<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code" v-pre=""><code class="language-"><span class="line"><span>umount [-fn] 装置文件名或挂载点</span></span></code></pre>
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p>选项与参数：</p>
 <ul>
 <li>-f ：强制卸除！可用在类似网络文件系统 (NFS) 无法读取到的情况下；</li>
 <li>-n ：不升级 /etc/mtab 情况下卸除。</li>
 </ul>
 <p>卸载/dev/hdc6</p>
-<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code class="language-"><span class="line"><span>[root@www ~]# umount /dev/hdc6</span></span></code></pre>
+<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code" v-pre=""><code class="language-"><span class="line"><span>[root@www ~]# umount /dev/hdc6</span></span></code></pre>
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><h1 id="jdk安装-rpm安装" tabindex="-1"><a class="header-anchor" href="#jdk安装-rpm安装"><span>jdk安装（rpm安装）</span></a></h1>
 <p>1、rpm下载地址http://www.oracle.com/technetwork/java/javase/downloads/index.html</p>
 <p>2、如果有安装openjdk 则卸载</p>
-<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code class="language-"><span class="line"><span>[root@kuangshen ~]# java -versionjava version "1.8.0_121"Java(TM) SE Runtime Environment (build 1.8.0_121-b13)Java HotSpot(TM) 64-Bit Server VM (build 25.121-b13, mixed mode)# 检查[root@kuangshen ~]# rpm -qa|grep jdkjdk1.8.0_121-1.8.0_121-fcs.x86_64# 卸载 -e --nodeps 强制删除[root@kuangshen ~]# rpm -e --nodeps jdk1.8.0_121-1.8.0_121-fcs.x86_64[root@kuangshen ~]# java -version-bash: /usr/bin/java: No such file or directory  # OK</span></span></code></pre>
+<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code" v-pre=""><code class="language-"><span class="line"><span>[root@kuangshen ~]# java -versionjava version "1.8.0_121"Java(TM) SE Runtime Environment (build 1.8.0_121-b13)Java HotSpot(TM) 64-Bit Server VM (build 25.121-b13, mixed mode)# 检查[root@kuangshen ~]# rpm -qa|grep jdkjdk1.8.0_121-1.8.0_121-fcs.x86_64# 卸载 -e --nodeps 强制删除[root@kuangshen ~]# rpm -e --nodeps jdk1.8.0_121-1.8.0_121-fcs.x86_64[root@kuangshen ~]# java -version-bash: /usr/bin/java: No such file or directory  # OK</span></span></code></pre>
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p>3、安装JDK</p>
-<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code class="language-"><span class="line"><span># 安装java rpm[root@kuangshen kuangshen]# rpm -ivh jdk-8u221-linux-x64.rpm# 安装完成后配置环境变量 文件：/etc/profileJAVA_HOME=/usr/java/jdk1.8.0_221-amd64CLASSPATH=%JAVA_HOME%/lib:%JAVA_HOME%/jre/libPATH=$PATH:$JAVA_HOME/bin:$JAVA_HOME/jre/binexport PATH CLASSPATH JAVA_HOME# 保存退出# 让新增的环境变量生效！source /etc/profile# 测试 java -version[root@kuangshen java]# java -versionjava version "1.8.0_221"Java(TM) SE Runtime Environment (build 1.8.0_221-b11) 	Java HotSpot(TM) 64-Bit Server VM (build 25.221-b11, mixed mode)</span></span></code></pre>
+<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code" v-pre=""><code class="language-"><span class="line"><span># 安装java rpm[root@kuangshen kuangshen]# rpm -ivh jdk-8u221-linux-x64.rpm# 安装完成后配置环境变量 文件：/etc/profileJAVA_HOME=/usr/java/jdk1.8.0_221-amd64CLASSPATH=%JAVA_HOME%/lib:%JAVA_HOME%/jre/libPATH=$PATH:$JAVA_HOME/bin:$JAVA_HOME/jre/binexport PATH CLASSPATH JAVA_HOME# 保存退出# 让新增的环境变量生效！source /etc/profile# 测试 java -version[root@kuangshen java]# java -versionjava version "1.8.0_221"Java(TM) SE Runtime Environment (build 1.8.0_221-b11) 	Java HotSpot(TM) 64-Bit Server VM (build 25.221-b11, mixed mode)</span></span></code></pre>
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><h3 id="tomcat安装-解压缩安装" tabindex="-1"><a class="header-anchor" href="#tomcat安装-解压缩安装"><span>Tomcat安装（解压缩安装）</span></a></h3>
 <p>1、安装好了Java环境后我们可以测试下Tomcat！准备好Tomcat的安装包！</p>
 <p>2、将文件移动到/usr/tomcat/下，并解压！</p>
-<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code class="language-"><span class="line"><span>[root@kuangshen kuangshen]# mv apache-tomcat-9.0.22.tar.gz /usr[root@kuangshen kuangshen]# cd /usr[root@kuangshen usr]# lsapache-tomcat-9.0.22.tar.gz[root@kuangshen usr]# tar -zxvf apache-tomcat-9.0.22.tar.gz   # 解压</span></span></code></pre>
+<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code" v-pre=""><code class="language-"><span class="line"><span>[root@kuangshen kuangshen]# mv apache-tomcat-9.0.22.tar.gz /usr[root@kuangshen kuangshen]# cd /usr[root@kuangshen usr]# lsapache-tomcat-9.0.22.tar.gz[root@kuangshen usr]# tar -zxvf apache-tomcat-9.0.22.tar.gz   # 解压</span></span></code></pre>
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p>3、运行Tomcat，进入bin目录，和我们以前在Windows下看的都是一样的</p>
-<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code class="language-"><span class="line"><span># 执行：startup.sh -->启动tomcat# 执行：shutdown.sh -->关闭tomcat./startup.sh./shutdown.sh</span></span></code></pre>
+<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code" v-pre=""><code class="language-"><span class="line"><span># 执行：startup.sh -->启动tomcat# 执行：shutdown.sh -->关闭tomcat./startup.sh./shutdown.sh</span></span></code></pre>
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p>4、确保Linux的防火墙端口是开启的，如果是阿里云，需要保证阿里云的安全组策略是开放的！</p>
-<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code class="language-"><span class="line"><span># 查看firewall服务状态systemctl status firewalld# 开启、重启、关闭、firewalld.service服务# 开启service firewalld start# 重启service firewalld restart# 关闭service firewalld stop# 查看防火墙规则firewall-cmd --list-all    # 查看全部信息firewall-cmd --list-ports  # 只看端口信息# 开启端口开端口命令：firewall-cmd --zone=public --add-port=80/tcp --permanent重启防火墙：systemctl restart firewalld.service命令含义：--zone #作用域--add-port=80/tcp  #添加端口，格式为：端口/通讯协议--permanent   #永久生效，没有此参数重启后失效</span></span></code></pre>
+<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code" v-pre=""><code class="language-"><span class="line"><span># 查看firewall服务状态systemctl status firewalld# 开启、重启、关闭、firewalld.service服务# 开启service firewalld start# 重启service firewalld restart# 关闭service firewalld stop# 查看防火墙规则firewall-cmd --list-all    # 查看全部信息firewall-cmd --list-ports  # 只看端口信息# 开启端口开端口命令：firewall-cmd --zone=public --add-port=80/tcp --permanent重启防火墙：systemctl restart firewalld.service命令含义：--zone #作用域--add-port=80/tcp  #添加端口，格式为：端口/通讯协议--permanent   #永久生效，没有此参数重启后失效</span></span></code></pre>
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><h3 id="安装docker-yum安装" tabindex="-1"><a class="header-anchor" href="#安装docker-yum安装"><span>安装Docker（yum安装）</span></a></h3>
 <blockquote>
 <p>基于 CentOS 7 安装</p>
@@ -998,39 +998,39 @@
 </li>
 <li>
 <p>确定你是CentOS7及以上版本</p>
-<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code class="language-"><span class="line"><span>[root@192 Desktop]# cat /etc/redhat-releaseCentOS Linux release 7.2.1511 (Core)</span></span></code></pre>
+<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code" v-pre=""><code class="language-"><span class="line"><span>[root@192 Desktop]# cat /etc/redhat-releaseCentOS Linux release 7.2.1511 (Core)</span></span></code></pre>
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div></li>
 <li>
 <p>yum安装gcc相关（需要确保 虚拟机可以上外网 ）</p>
-<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code class="language-"><span class="line"><span>yum -y install gccyum -y install gcc-c++</span></span></code></pre>
+<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code" v-pre=""><code class="language-"><span class="line"><span>yum -y install gccyum -y install gcc-c++</span></span></code></pre>
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div></li>
 <li>
 <p>卸载旧版本</p>
-<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code class="language-"><span class="line"><span>yum -y remove docker docker-common docker-selinux docker-engine# 官网版本yum remove docker \          docker-client \          docker-client-latest \          docker-common \          docker-latest \          docker-latest-logrotate \          docker-logrotate \          docker-engine</span></span></code></pre>
+<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code" v-pre=""><code class="language-"><span class="line"><span>yum -y remove docker docker-common docker-selinux docker-engine# 官网版本yum remove docker \          docker-client \          docker-client-latest \          docker-common \          docker-latest \          docker-latest-logrotate \          docker-logrotate \          docker-engine</span></span></code></pre>
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div></li>
 <li>
 <p>安装需要的软件包</p>
-<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code class="language-"><span class="line"><span>yum install -y yum-utils device-mapper-persistent-data lvm2</span></span></code></pre>
+<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code" v-pre=""><code class="language-"><span class="line"><span>yum install -y yum-utils device-mapper-persistent-data lvm2</span></span></code></pre>
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div></li>
 <li>
 <p>设置stable镜像仓库</p>
-<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code class="language-"><span class="line"><span># 错误yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo## 报错[Errno 14] curl#35 - TCP connection reset by peer[Errno 12] curl#35 - Timeout# 正确推荐使用国内的yum-config-manager --add-repo http://mirrors.aliyun.com/docker-ce/linux/centos/docker-ce.repo</span></span></code></pre>
+<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code" v-pre=""><code class="language-"><span class="line"><span># 错误yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo## 报错[Errno 14] curl#35 - TCP connection reset by peer[Errno 12] curl#35 - Timeout# 正确推荐使用国内的yum-config-manager --add-repo http://mirrors.aliyun.com/docker-ce/linux/centos/docker-ce.repo</span></span></code></pre>
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div></li>
 <li>
 <p>更新yum软件包索引</p>
-<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code class="language-"><span class="line"><span>yum makecache fast</span></span></code></pre>
+<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code" v-pre=""><code class="language-"><span class="line"><span>yum makecache fast</span></span></code></pre>
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div></li>
 <li>
 <p>安装Docker CE</p>
-<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code class="language-"><span class="line"><span>yum -y install docker-ce docker-ce-cli containerd.io</span></span></code></pre>
+<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code" v-pre=""><code class="language-"><span class="line"><span>yum -y install docker-ce docker-ce-cli containerd.io</span></span></code></pre>
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div></li>
 <li>
 <p>启动docker</p>
-<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code class="language-"><span class="line"><span>systemctl start docker</span></span></code></pre>
+<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code" v-pre=""><code class="language-"><span class="line"><span>systemctl start docker</span></span></code></pre>
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div></li>
 <li>
 <p>测试</p>
-<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code class="language-"><span class="line"><span>docker versiondocker run hello-worlddocker images</span></span></code></pre>
+<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code" v-pre=""><code class="language-"><span class="line"><span>docker versiondocker run hello-worlddocker images</span></span></code></pre>
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div></li>
 </ol>
 <h3 id="宝塔面板安装" tabindex="-1"><a class="header-anchor" href="#宝塔面板安装"><span>宝塔面板安装</span></a></h3>

@@ -7,10 +7,26 @@ export default defineUserConfig({
   title: '特拾伍的笔记们',
   description: '一名初级程序猿想养成写笔记的习惯而写的笔记',
   head: [
-    ['link', { rel: 'icon', href: '/favicon.ico' }], // 增加一个自定义的 favicon(网页标签的图标)
+    ['link', { rel: 'icon', href: '/public/favicon.ico' }], // 增加一个自定义的 favicon(网页标签的图标)
   ],
   bundler: viteBundler(),
   theme: hopeTheme({
+    author: {
+      name: "特拾伍",
+      url: "https://github.com/tesiwoo"
+    },
+    blog: {
+      name: "Tesiwoo",
+      avatar: "/logo.jpg",
+      description: "一名热爱技术、喜欢分享的程序员，专注于Java、数据库、分布式与中间件等方向。",
+      intro: "/README.html", // 个人介绍页
+      medias: {
+        GitHub: "https://github.com/tesiwoo"
+      }
+    },
+    // 分类与标签
+    category: true,
+    tag: true,
     subSildebar: 'auto',
     docsDir: 'docs',
     navbar: [
@@ -19,8 +35,7 @@ export default defineUserConfig({
         link: '/'
       },
       {
-        text: 'JAVA',
-        link: '/JAVA/collections.md'
+        text: 'JAVA', link: '/JAVA/base/annotation.md'
       },
       {
         text: '数据库',
@@ -56,51 +71,41 @@ export default defineUserConfig({
         children: [
           { text: '面经', link: '/interview/one.md' }
         ]
+      },
+      {
+        text: "📚博客", link: "/blog/"
       }
     ],
     sidebar: {
       '/JAVA/': [
         {
-          text: 'JAVA基础',
-          children: [
-            {
-              text: '集合类型',
-              children: [
-                { text: '集合', link: '/java/collections.md' },
-                { text: '链表', link: '/java/list.md' },
-                { text: 'Map', link: '/java/map.md' },
-                { text: 'Set', link: '/java/set.md' },
-                { text: '队列', link: '/java/Queue.md' },
-              ]
-            },
-            { text: '线程池', link: '/java/threadPool.md' },
-            { text: '序列化', link: '/java/serialize.md' },
-            { text: '注解', link: '/java/annotation.md' },
-            { text: 'UML', link: '/java/UML.md' },
-            { text: '其他', link: '/java/anonther.md' },
-          ],
-        },
-        {
-          text: 'JAVA进阶',
-          children: [
-            { text: 'BIO、NIO、AIO', link: '/java/BNAIO.md' },
+          text: '基础', children: [
+            { text: '注解', link: '/JAVA/base/annotation.md' },
+            { text: '序列化', link: '/JAVA/base/serialize.md' },
+            { text: '网络通信协议', link: '/JAVA/base/http-agreement.md' },
+            { text: '系统设计构图', link: '/JAVA/base/UML.md' },
           ]
         },
         {
-          text: 'JAVA虚拟机-JVM',
-          children: [
-            { text: 'JVM基础', link: '/java/JVM.md' }
+          text: '集合', children: [
+            { text: 'Collections', link: '/JAVA/collection/collections.md' },
+            { text: 'List', link: '/JAVA/collection/list.md' },
+            { text: 'Set', link: '/JAVA/collection/set.md' },
+            { text: 'Map', link: '/JAVA/collection/map.md' },
+            { text: 'Queue', link: '/JAVA/collection/Queue.md' },
           ]
         },
         {
-          text: '关键字', link: '/java/keywords.md'
+          text: '并发编程', children: [
+            { text: 'NIO、BIO、AIO', link: '/JAVA/concurrent/BNAIO.md' },
+            { text: '线程池', link: '/JAVA/concurrent/threadPool.md' }
+          ]
         },
         {
-          text: '计算机网络',
-          children: [
-            { text: 'HTTP协议', link: '/java/http-agreement.md' }
+          text: 'JVM', children: [
+            { text: 'JVM基础', link: '/JAVA/JVM/JVM.md' }
           ]
-        }
+        },
       ],
       '/db/': [
         {
@@ -143,8 +148,7 @@ export default defineUserConfig({
           text: 'Linux',
           children: [
             { text: '什么是Linux', link: '/Linux/whatLinux.md' },
-            { text: 'Linux使用', link: '/Linux/linuxUse.md' },
-            { text: 'VMWAre', link: '/Linux/VMWare.md' },
+            { text: 'Linux使用', link: '/Linux/linuxUse.md' }
           ],
         }
       ],
@@ -160,7 +164,7 @@ export default defineUserConfig({
       '/interview/': [
         { text: '面试题', link: '/interview/interview.md' },
         { text: '东莞小天才', link: '/interview/one.md' }
-      ],
+      ]
     },
     sidebarDepth: 2, // 侧边栏自动提取文章的几层标题
     sidebarOpen: true, // 初始状态是否打开侧边栏，默认true
