@@ -1,6 +1,5 @@
 ---
 home: true
-layout: Blog
 icon: home
 title: 特拾伍的博客
 heroImage: /logo.jpg

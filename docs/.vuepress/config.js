@@ -24,9 +24,6 @@ export default defineUserConfig({
         GitHub: "https://github.com/tesiwoo"
       }
     },
-    // 分类与标签
-    category: true,
-    tag: true,
     subSildebar: 'auto',
     docsDir: 'docs',
     navbar: [
