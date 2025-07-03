@@ -1,9 +1,9 @@
 ---
-tags:
-  - 注解
 title: annotation
 createTime: 2025/07/03 17:57:45
 permalink: /article/annotation/
+tags:
+  - 注解
 ---
 
 # 注解
