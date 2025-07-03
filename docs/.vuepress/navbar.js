@@ -6,12 +6,15 @@ export const navbar = defineNavbarConfig([
     {
         text: '笔记',
         items: [
-            {text: 'Web前端', link: '/web/start/', icon: 'logos:web-dev-icon'},
-            // {text: 'Android', link: '/android/start/', icon: 'material-icon-theme:android'},
-            {text: '备忘录', link: '/memo/start/', icon: 'emojione:memo'},
+            {text: 'JAVA', link: '/JAVA/start/'},
+            // {text: '数据库', link: '/JAVA/base/annotation.md'},
+            // {text: '组件', link: '/JAVA/base/annotation.md'},
+            // {text: '工具', link: '/JAVA/base/annotation.md'},
+            // {text: '运维', link: '/JAVA/base/annotation.md'},
+            {text: '面试', link: '/web/start/', icon: 'logos:web-dev-icon'}
         ],
         icon: 'ic:outline-note-alt',
-        activeMatch: '^/notes/',
+        activeMatch: '^/notes/JAVA/',
     },
     {
         text: '更多',
