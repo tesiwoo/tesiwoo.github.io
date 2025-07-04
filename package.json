@@ -1,8 +1,8 @@
 {
-  "name": "hoey-blog-plume",
+  "name": "tesiwoo-blog",
   "type": "module",
-  "description": "Hoey's blog.",
-  "author": "zhenghaoyang24",
+  "description": "Tesiwoo's blog.",
+  "author": "Tesiwoo",
   "engines": {
     "node": "^18.20.0 || >=20.0.0"
   },

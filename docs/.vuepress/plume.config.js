@@ -12,7 +12,7 @@ export default defineThemeConfig({
   appearance: 'true',
   profile: {
     avatar: 'avatar.jpg',
-    name: 'Hoey',
+    name: 'Tesiwoo',
     description: '',
     circle: true,
     // location: '',

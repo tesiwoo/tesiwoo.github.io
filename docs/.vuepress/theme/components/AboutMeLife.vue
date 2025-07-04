@@ -9,47 +9,47 @@
 </template>
 
 <script setup>
-import { ref, onMounted } from 'vue';
-import * as echarts from 'echarts';
+// import { ref, onMounted } from 'vue';
+// import * as echarts from 'echarts';
 
-const chartRef = ref(null);
+// const chartRef = ref(null);
 
-// 示例数据
-const lifeData = [
-  { name: '学习', value: (300/1020).toFixed(2) },
-  { name: '游戏', value: (100/1020).toFixed(2) },
-  { name: '阅读', value: (60/1020).toFixed(2) },
-  { name: '动漫', value: (180/1020).toFixed(2) },
-  { name: '生活', value: (275/1020).toFixed(2) },
-  { name: '工作', value: (105/1020).toFixed(2) }
-];
-onMounted(() => {
-  const myChart = echarts.init(chartRef.value);
+// // 示例数据
+// const lifeData = [
+//   { name: '学习', value: (300/1020).toFixed(2) },
+//   { name: '游戏', value: (100/1020).toFixed(2) },
+//   { name: '阅读', value: (60/1020).toFixed(2) },
+//   { name: '动漫', value: (180/1020).toFixed(2) },
+//   { name: '生活', value: (275/1020).toFixed(2) },
+//   { name: '工作', value: (105/1020).toFixed(2) }
+// ];
+// onMounted(() => {
+//   const myChart = echarts.init(chartRef.value);
 
-  const option = {
-    tooltip: {
-      trigger: 'item'
-    },
-    series: [
-      {
-        name: '我的日常',
-        type: 'pie',
-        radius: ['50%', '80%'],
-        center: ['50%', '60%'],
-        startAngle: 180,
-        endAngle: 360,
-        data: lifeData
-      }
-    ]
-  };
+//   const option = {
+//     tooltip: {
+//       trigger: 'item'
+//     },
+//     series: [
+//       {
+//         name: '我的日常',
+//         type: 'pie',
+//         radius: ['50%', '80%'],
+//         center: ['50%', '60%'],
+//         startAngle: 180,
+//         endAngle: 360,
+//         data: lifeData
+//       }
+//     ]
+//   };
 
-  myChart.setOption(option);
+//   myChart.setOption(option);
 
-  // 响应式调整
-  window.addEventListener('resize', () => {
-    myChart.resize();
-  });
-});
+//   // 响应式调整
+//   window.addEventListener('resize', () => {
+//     myChart.resize();
+//   });
+// });
 </script>
 
 <style scoped>
