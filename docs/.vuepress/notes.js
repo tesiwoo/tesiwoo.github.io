@@ -8,7 +8,7 @@ const noteJava = defineNoteConfig({
 )
 const noteDb = defineNoteConfig({
         dir: '数据库',
-        link: '/dv/',
+        link: '/db/',
         sidebar: 'auto',
     },
 )
