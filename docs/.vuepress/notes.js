@@ -6,27 +6,43 @@ const noteJava = defineNoteConfig({
         sidebar: 'auto',
     },
 )
-const noteAndroid = defineNoteConfig({
-        dir: 'android',
-        link: '/android/',
-        sidebar: 'auto',
-    },
-)
-const noteMemo = defineNoteConfig({
-        dir: 'memo',
-        link: '/memo/',
+const noteDb = defineNoteConfig({
+        dir: '数据库',
+        link: '/dv/',
         sidebar: 'auto',
     },
 )
 
-const noteMore = defineNoteConfig({
-        dir: 'more',
-        link: '/more/',
+const noteComponent = defineNoteConfig({
+        dir: '组件',
+        link: '/component/',
+        sidebar: 'auto',
     },
 )
 
+const noteOperationMainTenance = defineNoteConfig({
+        dir: '运维',
+        link: '/nom/',
+        sidebar: 'auto',
+    },
+)
+
+
+const noteTool = defineNoteConfig({
+        dir: '工具',
+        link: '/tool/',
+        sidebar: 'auto',
+    },
+)
+
+const noteInterview = defineNoteConfig({
+        dir: '面试',
+        link: '/interview/',
+        sidebar: 'auto',
+    },
+)
 export const notes = defineNotesConfig({
     dir: 'notes',
     link: '/',
-    notes: [noteJava, noteAndroid, noteMemo, noteMore],
+    notes: [noteJava, noteDb, noteComponent, noteOperationMainTenance, noteTool, noteInterview],
 })

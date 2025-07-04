@@ -2,13 +2,11 @@
   <div class="container">
     <canvas ref="canvasRef"></canvas>
     <div class="head-social">
-      <a href="https://github.com/zhenghaoyang24" target="_blank" class="head-social-btn">
-        <icon name="mdi:github"/>
-      </a>
-      <router-link to="/blog/" class="head-social-avatar"><img src="/avatar.jpg" alt="avatar"></router-link>
-      <a href="mailto:zhenghaoyang24@foxmail.com" target="_blank" class="head-social-btn">
-        <icon class="head-social-btn" name="ic:baseline-email"></icon>
-      </a>
+      <div class="card-content grid-row-3-3">
+         <router-link to="/blog/" class="head-social-avatar"><img src="/avatar.jpg" alt="avatar"></router-link>
+      <p class="about-me-card-text-big"><span style="color: #202020">无限进步</span>，<span style="color: #d53737">势必达成</span></p>
+      </div>
+     
     </div>
     <div class="about-me">
       <div class="card-content grid-row-3-2">
@@ -73,14 +71,14 @@ canvas {
 
   .head-social-avatar {
     margin: 20px;
-    border-radius: 30%;
-    overflow: hidden;
-    width: 60px;
-    transition: transform 0.2s;
+  border-radius: 50%; /* 改为圆形 */
+  overflow: hidden;   /* 确保图片裁剪成圆形 */
+  width: 60px;
+  transition: transform 0.2s;
 
-    &:hover {
-      transform: scale(1.1);
-    }
+  &:hover {
+    transform: scale(1.1);
+  }
   }
 
   .head-social-btn {
@@ -117,6 +115,10 @@ canvas {
 }
 .grid-row-3-2 {
   grid-template-columns: 3fr 2fr;
+}
+
+.grid-row-3-3 {
+  grid-template-columns: 3fr 1fr;
 }
 
 .grid-row-1-1 {
