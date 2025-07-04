@@ -61,5 +61,3 @@ permalink: /article/22041901/
     transform: rotate(90deg);
   }
 }
-```
-![img.png](/assets/22041901_01.gif)
