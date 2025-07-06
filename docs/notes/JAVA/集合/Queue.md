@@ -1,5 +1,5 @@
 ---
-title: Queue
+title: 队列-Queue
 createTime: 2025/07/04 10:45:45
 permalink: /JAVA/3v5y2p5f/
 ---

@@ -1,7 +1,7 @@
 ---
-title: threadPool
+title: 线程池
 createTime: 2025/07/04 10:46:00
-permalink: /JAVA/pofperf8/
+permalink: /JAVA/threadPool/
 tags:
   - 注解
 ---

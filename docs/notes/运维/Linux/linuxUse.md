@@ -1,7 +1,10 @@
 ---
-title: linuxUse
+title: 使用Linux
 createTime: 2025/07/04 10:48:12
 permalink: /nom/linuxUse/
+tag:
+  - 运维
+  - Linux
 ---
 # 概述
 

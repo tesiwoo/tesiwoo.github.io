@@ -1,7 +1,10 @@
 ---
-title: mysql-start
+title: 开始
 createTime: 2025/07/04 18:06:02
-permalink: /db/k27s43pg/
+permalink: /db/part1/
+tag:
+  - MYSQL
+  - 数据库
 ---
 <Toc />
 

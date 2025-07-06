@@ -1,7 +1,7 @@
 ---
-title: Class0：AMQP协议
+title: AMQP协议
 createTime: 2025/07/04 18:06:41
-permalink: /component/q7dcisyu/
+permalink: /component/amqp/
 ---
 #AMQP是什么
 

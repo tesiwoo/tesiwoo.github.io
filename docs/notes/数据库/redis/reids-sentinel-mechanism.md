@@ -1,7 +1,9 @@
 ---
-title: reids-sentinel-mechanism
-createTime: 2025/07/04 18:05:52
-permalink: /db/16re22ib/
+title: 哨兵机制
+createTime: 2025/07/04 18:05:59
+permalink: /db/reidsSentinelMechanism/
+tag:
+  - Redis
 ---
 # 哨兵机制
 

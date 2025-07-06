@@ -1,7 +1,10 @@
 ---
-title: whatLinux
+title: 什么是Linux
 createTime: 2025/07/04 10:48:12
-permalink: /nom/whatliux/
+permalink: /nom/whatlinux/
+tag:
+  - 运维
+  - Linux
 ---
 # Linux是个啥？
 Linux是一个自由且开源的类Unix操作系统。英译为：Linux is not UNIX。

@@ -1,5 +1,5 @@
 ---
-title: UML
+title: 架构作图
 createTime: 2025/07/03 17:57:44
 permalink: /JAVA/uml/
 tags:

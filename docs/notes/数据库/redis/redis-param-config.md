@@ -1,7 +1,9 @@
 ---
-title: redis-param-config
-createTime: 2025/07/04 18:05:52
-permalink: /db/hhd0miz8/
+title: Redis配置参数
+createTime: 2025/07/04 18:05:04
+permalink: /db/RedisConfig/
+tag:
+  - Redis
 ---
 
 

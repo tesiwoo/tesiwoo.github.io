@@ -1,7 +1,9 @@
 ---
 title: 基于Redis的mq
-createTime: 2025/07/04 18:05:52
-permalink: /db/g7165mgh/
+createTime: 2025/07/04 18:05:53
+permalink: /db/redisMq/
+tag:
+  - Redis
 ---
 # 基于Redis的消息队列
 分布式系统使用消息队列的三大需求： 消息的有序性、重复消息的处理、消息可靠性保证。

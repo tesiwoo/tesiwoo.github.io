@@ -1,7 +1,10 @@
 ---
-title: mysql-index
+title: 索引
 createTime: 2025/07/04 18:06:02
-permalink: /db/n638llb8/
+permalink: /db/mysql-index/
+tag:
+  - MYSQL
+  - 数据库
 ---
 
 

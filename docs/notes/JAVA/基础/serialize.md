@@ -1,5 +1,5 @@
 ---
-title: serialize
+title: 序列化
 createTime: 2025/07/03 17:57:45
 permalink: /JAVA/serialize/
 tag:

@@ -1,7 +1,7 @@
 ---
 title: RabbitMQ
 createTime: 2025/07/04 18:06:41
-permalink: /component/jx2qqdcd/
+permalink: /component/rabbitMq/
 ---
 # 消息中间件简介
 

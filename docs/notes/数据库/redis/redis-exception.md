@@ -1,7 +1,9 @@
 ---
-title: redis-exception
-createTime: 2025/07/04 18:05:52
-permalink: /db/hxebb5p0/
+title: Redis 的异常
+createTime: 2025/07/04 18:05:56
+permalink: /db/redisExcepition/
+tag:
+- Redis
 ---
 # Redis 的异常
 实际应用Redis缓存时，会经常遇到一些异常问题，总共能够分为四个方面：

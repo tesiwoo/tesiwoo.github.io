@@ -2,8 +2,9 @@
 title: one
 createTime: 2025/07/04 10:47:51
 permalink: /interview/one/
+tag:
+  - 面试
 ---
-[[toc]]
 
 # 技术一面
 

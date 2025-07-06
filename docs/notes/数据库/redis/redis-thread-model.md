@@ -1,7 +1,9 @@
 ---
-title: redis-thread-model
-createTime: 2025/07/04 18:05:52
-permalink: /db/ttu05u4j/
+title: Redis的线程模型
+createTime: 2025/07/04 18:05:01
+permalink: /db/redisThreadModel/
+tag:
+  - Redis
 ---
 # Redis的线程模型
 

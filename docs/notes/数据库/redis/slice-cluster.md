@@ -1,7 +1,9 @@
 ---
-title: slice-cluster
-createTime: 2025/07/04 18:05:52
-permalink: /db/8has9shw/
+title: 切片集群
+createTime: 2025/07/04 18:05:51
+permalink: /db/sliceCluster/
+tag:
+  - Redis
 ---
 # 切片集群
 切片集群：也叫分片集群，就是指启动多个实例组成一个集群，然后按照一定的规则，把收到的数据划分成多份，每一份有一个实例来保存。
