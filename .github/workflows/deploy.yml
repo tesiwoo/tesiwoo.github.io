@@ -37,8 +37,6 @@ jobs:
       # Run the build script
       - name: Build VuePress site
         run: npm run docs:build
-        # 确保 CNAME 被复制到最终输出目录
-        cp ./docs/.vuepress/public/CNAME ./docs/.vuepress/dist/
 
 
       # 查看 workflow 的文档来获取更多信息
