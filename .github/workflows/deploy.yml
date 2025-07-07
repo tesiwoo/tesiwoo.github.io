@@ -37,6 +37,8 @@ jobs:
       # Run the build script
       - name: Build VuePress site
         run: npm run docs:build
+        # 确保 CNAME 被复制到最终输出目录
+        cp ./docs/.vuepress/public/CNAME ./docs/.vuepress/dist/
 
 
       # 查看 workflow 的文档来获取更多信息
@@ -51,3 +53,12 @@ jobs:
         env:
           # @see https://docs.github.com/cn/actions/reference/authentication-in-a-workflow#about-the-github_token-secret
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Enforce Custom Domain
+        run: |
+        curl -X PUT \
+        -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+        -H "Accept: application/vnd.github.v3+json" \
+        https://api.github.com/repos/tesiwoo/tesiwoo.github.io/ \
+        -d '{"cname":"tesiwoo.top", "source":{"branch":"gh-pages"}}'
+        
