@@ -4,11 +4,12 @@
 
 <template>
 <div class="about-me-card-bg vp-blog-post-item about-me-character">
-  <p class="about-me-card-title-normal">性格</p>
+  <p class="about-me-card-title-normal">MBTI</p>
   <div class="about-me-character-content">
     <div class="about-me-character-type">
       <p class="about-me-card-text-big about-me-card-text-color">快乐小狗</p>
       <p class="about-me-card-text-big">ENFP</p>
+<!--      <p class="about-me-card-title-normal">竞选者人格类型的人是真正富有自由精神的人。 他们常常是聚会上的焦点，但是与眼前的兴奋和快乐相比，他们更享受与人们建立的社会和情感联系。富有魅力，独立，精力充沛且有同情心</p>-->
     </div>
     <div class="about-me-character-img">
     </div>

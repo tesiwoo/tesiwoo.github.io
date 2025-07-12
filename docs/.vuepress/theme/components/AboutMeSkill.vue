@@ -1,19 +1,19 @@
 <template>
   
-  <!-- 
+
   <div class="about-me-card-bg vp-blog-post-item about-me-skill">
     <div style="margin-left: 20px">
       <p class="about-me-card-title-normal">技能</p>
       <p class="about-me-card-text-big">我的能力</p>
     </div>
-    //第一行向左移动
+<!--    第一行向左移动-->
     <div class="marquee-row first-row">
       <div class="marquee-content">
         <span v-for="(item, index) in technology" :key="index"> <icon :name="item.icon" /> </span>
         <span v-for="(item, index) in technology" :key="index + technology.length"><icon :name="item.icon" /></span>
       </div>
     </div>
-     //第二行向右移动 
+<!--     第二行向右移动 -->
     <div class="marquee-row second-row">
       <div class="marquee-content">
         <span v-for="(item, index) in tools" :key="index"><icon :name="item.icon" /></span>
@@ -26,9 +26,7 @@
     </div>
   </div>
   
-  
-  
-  -->
+
   
 </template>
 
@@ -37,28 +35,29 @@ import { ref } from 'vue';
 
 // 技能
 const technology = ref([
-  { type: 'Vue', icon: 'logos:vue' },
-  { type: 'Pinia', icon: 'logos:pinia' },
-  { type: '微信小程序', icon: 'tabler:brand-miniprogram' },
-  { type: 'JavaScript', icon: 'vscode-icons:file-type-js' },
-  { type: 'TypeScript', icon: 'vscode-icons:file-type-typescriptdef' },
-  { type: 'Less', icon: 'logos:less' },
-  { type: 'CSS3', icon: 'logos:css-3' },
-  { type: 'HTML5', icon: 'logos:html-5' },
-  { type: 'Spring', icon: 'devicon:spring' },
-  { type: 'MySQL', icon: 'devicon:mysql' }
+  { type: 'Java', icon: 'logos:java' },
+  { type: 'Spring', icon: 'logos:spring' },
+  { type: 'Redis', icon: 'logos:redis' },
+  { type: 'MySQL', icon: 'logos:mysql' },
+  { type: 'RabbitMQ', icon: 'logos:rabbitmq-icon' },
+  { type: 'Elasticsearch', icon: 'logos:elasticsearch' },
+  { type: '设计模式', icon: 'mdi:puzzle' }, // 通用设计图标
+  { type: 'MongoDB', icon: 'logos:mongodb' },
+  { type: 'Docker', icon: 'logos:docker' },
+
 ]);
 
 // 工具
 const tools = ref([
-  { type: 'WebStorm', icon: 'devicon:webstorm' },
-  { type: 'VSCode', icon: 'vscode-icons:file-type-vscode' },
-  { type: 'Android Studio', icon: 'devicon:androidstudio' },
-  { type: 'pnpm', icon: 'vscode-icons:file-type-light-pnpm' },
-  { type: 'npm', icon: 'logos:npm' },
-  { type: 'Vite', icon: 'devicon:vitejs' },
   { type: 'IDEA', icon: 'logos:intellij-idea' },
-  { type: 'Netlify', icon: 'devicon:netlify' },
+  { type: 'SQLyog', icon: 'mdi:database' }, // 替代图标
+  { type: 'VSCode', icon: 'vscode-icons:file-type-vscode' },
+  { type: 'Maven', icon: 'logos:maven' },
+  { type: 'Git', icon: 'logos:git-icon' },
+  { type: 'Markdown', icon: 'logos:markdown' },
+  { type: 'Linux', icon: 'logos:linux-tux' },
+  { type: 'npm', icon: 'logos:npm' },
+  { type: 'pnpm', icon: 'logos:pnpm' },
 ]);
 </script>
 
