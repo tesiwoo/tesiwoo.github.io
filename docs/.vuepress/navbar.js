@@ -8,6 +8,7 @@ export const navbar = defineNavbarConfig([
         items: [
             {text: 'JAVA', link: '/JAVA/start/', icon: 'logos:java'},
             {text: '数据库', link: '/db/start/', icon: 'mdi:database'},
+            {text: '框架', link: '/framework/start/', icon: 'mdi:puzzle-outline'},
             {text: '组件', link: '/component/start/', icon: 'mdi:puzzle'},
             {text: '工具', link: '/tool/start/', icon: 'mdi:tools'},
             {text: '运维', link: '/nom/start/', icon: 'mdi:server'},
